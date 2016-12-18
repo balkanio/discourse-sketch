@@ -1,0 +1,1426 @@
+<!DOCTYPE html>
+<!-- saved from url=(0027)https://meta.discourse.org/ -->
+<html lang="en" class="desktop-view not-mobile-device   js no-touch discourse-no-touch"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Discourse Meta</title>
+    <meta name="description" content="Discussion about the next-generation open source Discourse forum software">
+    <meta name="author" content="">
+<meta name="generator" content="Discourse 1.7.0.beta1 - https://github.com/discourse/discourse version 5e3932d40427af086244752e7c0b1171f86cb113">
+<link rel="icon" type="image/png" href="https://discourse-meta.s3-us-west-1.amazonaws.com/original/3X/c/b/cb4bec8901221d4a646e45e1fa03db3a65e17f59.png">
+<link rel="apple-touch-icon" type="image/png" href="https://discourse-meta.s3-us-west-1.amazonaws.com/original/3X/c/b/cb4bec8901221d4a646e45e1fa03db3a65e17f59.png">
+<link rel="icon" sizes="144x144" href="https://discourse-meta.s3-us-west-1.amazonaws.com/original/3X/c/b/cb4bec8901221d4a646e45e1fa03db3a65e17f59.png">
+<meta name="theme-color" content="#ffffff">
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+
+<script type="text/javascript" async="" src="./Discourse Meta_files/ga.js"></script><script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","url":"https://meta.discourse.org","potentialAction":{"@type":"SearchAction","target":"https://meta.discourse.org/search?q={search_term_string}","query-input":"required name=search_term_string"}}</script><link id="_shutUp" rel="stylesheet" type="text/css" href="data:text/css;base64,LyogCiAqIHNodXR1cC5jc3MKICogd2ViIC0gcGVhbnV0IGdhbGxlcnkgPSBibGlzcwogKgogKiBieSBTdGV2ZW4gRnJhbmsgPHN0ZXZlbmZAcGFuaWMuY29tPiBhbmQgY29udHJpYnV0b3JzCiAqIDxodHRwczovL3N0ZXZlbmYuY29tL3NodXR1cGNzcy8+CiAqCiAqIFBsZWFzZSBkbyBub3QgdXNlIHNodXR1cC5jc3MgaW4gZGVyaXZhdGl2ZSB3b3JrcyAoc3VjaCBhcyBpT1MgCiAqIENvbnRlbnQgQmxvY2tlcnMgb3IgYnJvd3NlciBleHRlbnNpb25zKSB3aXRob3V0IHBlcm1pc3Npb24uCiAqIAogKiBOb3RlczoKICoKICogMS4gSWYgeW91IHdhbnQgdG8gUkUtRU5BQkxFIGNvbW1lbnRzIGZvciBhIHNwZWNpZmljIHNpdGUsIGFkZCBhbgogKiBvdmVycmlkZSBhZnRlciBpbXBvcnRpbmcgdGhpcyBmaWxlLiAgRm9yIGV4YW1wbGUsIHRvIHJlLWVuYWJsZQogKiBqdXN0IFNsYXNoZG90IGNvbW1lbnRzOgogKiAgCiAqIEBpbXBvcnQgdXJsKCJodHRwczovL3N0ZXZlbmYuY29tL3NodXR1cC9zaHV0dXAtbGF0ZXN0LmNzcyIpOwogKiAKICogI2NvbW1lbnRsaXN0aW5nIHsKICogICAgIGRpc3BsYXk6IGluaGVyaXQgIWltcG9ydGFudDsKICogfQogKgogKiBCZSBhd2FyZSB0aGF0IHNvbWUgc2l0ZXMgbWF5IGJlIGFmZmVjdGVkIGJ5IG1vcmUgdGhhbiBvbmUgcnVsZS4KICoKICogMi4gSWYgeW91J2QgbGlrZSB0byBqdXN0IGZhZGUgY29tbWVudHMgb3V0IHJhdGhlciB0aGFuIGNvbXBsZXRlbHkgCiAqIHJlbW92ZSB0aGVtIGZyb20gdGhlIHBhZ2U6CiAqIAogKiBSZXBsYWNlOgogKiAgICAgZGlzcGxheTogbm9uZSAhaW1wb3J0YW50OwogKgogKiBXaXRoIHNvbWV0aGluZyBsaWtlOgogKiAgICAgb3BhY2l0eTogMC4xOwogKgogKi8KCi8qIFlvdVR1YmUgKHN0YW5kYXJkIGFuZCBGZWF0aGVyIGludGVyZmFjZXMpICovCgojd2F0Y2gtY29tbWVudC1wYW5lbCwKI2NtLAojd2F0Y2gtY29tbWVudHMtY29yZSwKI3dhdGNoLWRpc2N1c3Npb24sCgovKiBZb3VUdWJlIChsYXRlIDIwMTMsIEcrIGludGVncmF0aW9uKSAqLwoKI2NvbW1lbnRzLXRlc3QtaWZyYW1lLAoKLyogCiAqIERpZ2cgYW5kIG90aGVyIHNpdGVzIHRoYXQgdXNlICJjb21tZW50cyIgZGl2cwogKiAoTWFrZSBhbiBleGNlcHRpb24gZm9yIDxjb2RlPiBlbGVtZW50cywgd2hvc2UgImNvbW1lbnRzIiBhcmUKICogYSBkaWZmZXJlbnQgYW5pbWFsKSAKKi8KCi5jb21tZW50czpub3QoY29kZSksCi5Db21tZW50czpub3QoY29kZSksCiNjb21tZW50czpub3QoY29kZSksCiNDb21tZW50czpub3QoY29kZSksCiNjb21tZW50c19jb250YWluZXIsCgovKiBDTk4gYW5kIG90aGVyIHNpdGVzIHRoYXQgdXNlIERpc3F1cyAqLwoKI2Rpc3F1c190aHJlYWQsCiNkc3EtY29udGVudCwKCi8qIEFpbid0IEl0IENvb2wgTmV3cyAqLwoKLmJsb2NrLXRhbGtiYWNrX3N0b3J5LAoKLyogVmVyc2lvblRyYWNrZXIgKi8KCiNwcm9kUmV2aWV3cywKCi8qIE1hY1VwZGF0ZSAqLwoKLnJldmNvbnRlbnQsCgovKiBXb3JkUHJlc3MgZGVmYXVsdCBLdWJyaWNrIHRoZW1lIGFuZCBkZXNjZW5kZW50cyAqLwoKLmNvbW1lbnRsaXN0LAoKLyogU2xhc2hkb3QgKi8KCiNjb21tZW50bGlzdGluZywKCi8qIENCQyBOZXdzICovCgojc29jaWFsY29tbWVudHMsCiNjb21tZW50d3JhcHBlciwKCi8qIEN8TmV0IE5ld3MuY29tICovCgouY29tbWVudHdyYXBwZXIsCgovKiBSZWRkaXQgKi8KCi5jb21tZW50YXJlYSwKCi8qIE9yZWdvbkxpdmUgYW5kIGdlbmVyaWMgImNvbW1lbnQiIGNsYXNzICovCgouY29tbWVudCwKCi8qIEtBVFUgKi8KCiNjb21tZW50Zm9ybSwKCi8qIFdhc2hpbmd0b24gUG9zdCBhbmQgb3RoZXIgc2l0ZXMgdGhhdCB1c2UgImNvbW1lbnRUZXh0IiBkaXZzICovCgouY29tbWVudFRleHQsCgovKiBHYW5uZXR0IG5ld3NwYXBlcnMgYW5kIG90aGVyIHNpdGVzIHRoYXQgdXNlIFBsdWNrICovCgpkaXYjcGx1Y2tjb21tZW50cywKCi8qIExhc3QuZm0gc2hvdXRib3ggKi8KCmRpdiNwYWdlIGRpdiNjb250ZW50IGgyI3Nob3V0Ym94LCBkaXYjcGFnZSBkaXYjY29udGVudCBkaXYjc2hvdXRib3hDb250YWluZXIsCgovKiBUaGUgR2xvYmUgYW5kIE1haWwgKi8KCiNsYXRlc3QtY29tbWVudHMsCgovKiBFVyAqLwoKLmNvbW1lbnRIb2xkZXIsCgovKiBVbmtub3duICovCgouY29tbWVudHMtbGlzdCwKI2Jsb2dDb21tZW50cywKI2NvbW1lbnRzX3BhbmUsCiNjb21tZW50Y29udGFpbmVyLAojY29tbWVudHNEaXYsCgovKiBCb3hlZSAqLwoKLmNvbW1lbnQtY29udGFpbmVyLCAKI2NvbW1lbnQtY29udGFpbmVyLAoKLyogTUxCICovCgojY29tbWVudF9jb250YWluZXIsCgovKiBDTk4gKi8KCiNjb21tZW50YmxvYiwKI2NubkNvbW1lbnRzLAoKLyogVGhlIFN0cmFuZ2VyICovCgojQnJvd3NlQ29tbWVudHMsCgovKiBZYWhvbyBOZXdzICovCgoubXdwcGh1LWNvbW1lbnRzLAoudWdjY210LWNvbW1lbnRzLAoKLyogQ29kaW5nIEhvcnJvciAqLwoKLmNvbW1lbnRzLWJvZHksCgovKiBzZWVuIG9uIFJldXRlcnMgKi8KCi5hcnRpY2xlQ29tbWVudHMsCgovKiBuYXRpb25hbHBvc3QuY29tIChQbHVjaykgKi8KCi5wbHVjay1jb21tLAoKLyogS0FUVSAqLwoKLnBhZ2UtY29tbWVudHMsCgovKiBEZXZpYW50QXJ0ICovCgojZ21pLUNDb21tZW50TWFzdGVyLAoKLyogU29tZSBibG9ncyAqLwoKLmNvbW1lbnRzLWNvbnRhaW5lciwKCi8qIE9wcmFoICovCgojbWVkaWFfY29tbWVudHMsCgovKiA5dG81bWFjICovCgojaWRjLWNvbnRhaW5lci1wYXJlbnQsCgovKiBMaXZlZnlyZSAqLwoKI2xpdmVmeXJlX2NvbW1lbnRfc3RyZWFtLAojbGl2ZWZ5cmUtYm9keSwKI2xpdmVmeXJlLAouZnlyZSwKCi8qIFBDIFdvcmxkICovCgojYXJ0aWNsZUNvbW1lbnRzLAoKLyogU2xhdGUgKi8KCi5qcy1Db21tZW50c0FyZWEsCgovKiBOWVRpbWVzIEJsb2dzICovCgojcmVhZGVyQ29tbWVudHMsCi5yZWFkZXJDb21tZW50cywKI2NvbW1lbnRzQ29udGFpbmVyLAouY29tbWVudHNDb250YWluZXIsCi5jb21tZW50c01vZHVsZSwKCi8qIG55dGltZXMuY29tICovCgpzcGFuLnBvc3RNZXRhSGVhZGVyQ29tbWVudENvdW50LmNvbW1lbnRDb3VudCwKYnV0dG9uLmNvbW1lbnRzLWJ1dHRvbiwKYS5jb21tZW50Q291bnRMaW5rLApwLnRoZW1lLWNvbW1lbnRzLAoKLyogQkJDIE5ld3MgKi8KCi5kbmEtY29tbWVudCwKCi8qIFpETmV0ICovCgoudmlldy02LCAKLnNwYWNlLV81LAoKLyogR2FtYXN1dHJhICovCgouYWxsX2NvbW1lbnRzLAoKLyogZHZpY2UuY29tICovCgojZGlzcGxheV9jb21tZW50cywKCi8qIGhwLmNvbSAqLwoKLmFydGljbGUtY29tbWVudHMsCgovKiB1bmlvbmxlYWRlci5jb20gKi8KCiNjb21tZW50c2NvbnRhaW5lciwKCi8qIGlmYy5jb20gKi8KCi5lY2hvLXN0cmVhbS1jb250YWluZXIsCgovKiBjcmVhdGl2ZXJldmlldy5jby51ayAqLwoKI2ZlZWRiYWNrLAoKLyogdGhlbmV4dHdlYi5jb20gKi8KCiNsZl9jb21tZW50cywKI2xmX3R3aXR0ZXJfY29tbWVudHMsCiNsZl9mYWNlYm9va19jb21tZW50cywKI2xmX2NvbW1lbnRfc3RyZWFtLAoKLyogTWFjV29ybGQgKi8KCiNjb21tZW50TGlzdCwKCi8qIGZ0LmNvbSAqLwoKI2luZmVybm8tY29tbWVudHMsCgovKiB0aWRiaXRzLmNvbSAqLwoKLmNiX2Jsb2NrLAoKLyogZGlsYmVydC5jb20gKi8KCi5DTVRfQ29tbWVudExpc3QsCgovKiBDcmFja2VkICovCiAKI2NvbW1lbnRzX3NlY3Rpb24sCgovKiBGYWNlYm9vayBmZWVkYmFjayAqLwoKLmZiLWNvbW1lbnRzLAouVUZJQ29tbWVudCwKCi8qIGJ1enpmZWVkICovCgojcmVzcG9uc2VzLAojZmFjZWJvb2tfcmVzcG9uc2VzLAojZmFjZWJvb2tfY29udmVyc2F0aW9ucywKI2ZiX2NvbW1lbnRzX3dyYXBwZXIsCiNmYl9jb21tZW50c19jb250cm9sLAojcmVzcG9uZCwKI2JhZGdlX3ZvdGluZywKCi8qIHNwaWVnZWwuZGUgKi8KCi5zcENvbW1lbnRzQm94Qm9keSwKCi8qIGF1dG8tbW90b3ItdW5kLXNwb3J0LmRlICovCgoua29tbWVudGFyZV91ZWJlcnNpY2h0LAoKLyogY29ycmllcmUuaXQgKi8KCiNib2R5X2RsdCwKI2NvbW1lbnRfYm94X2FydGljbGUsCgovKiByZXB1YmJsaWNhLml0ICovCgojdWdjLWNvbnRhaW5lciwKI2dzLXNvY2lhbC1jb21tZW50cywKLmdpZy1jb21tZW50cy1jb250YWluZXIsCgovKiBmYXoubmV0ICovCgouQXJ0aWtlbEtvbW1lbnRpZXJlbiwKCi8qIEdpYW50IEJvbWIgYXZhdGFycyAqLwoKLmNvbW1lbnQtYXZhdGFyLXdyYXAsCgovKiBobG50di5jb20gKi8KCi5mYkZlZWRiYWNrQ29udGVudCwKCi8qIG1pcnJvci5jby51ayAqLwoKLnBsdWNrLXdyYXAsCgovKiBUd2l0UGljICovCgojbWVkaWEtY29tbWVudHMsCgovKiBHdWFyZGlhbiAqLwoKI2QyLXJvb3QsCgovKiBFISBPbmxpbmUgKi8KCi50aHltZS1jb21tZW50LWxpc3QsCgovKiBTb3VuZENsb3VkIG5ldyAqLwoKLmNvbW1lbnRJdGVtTGlzdCwKLndhdmVmb3JtQ29tbWVudHMsCgovKiBQZW5ueSBBcmNhZGUgcmVwb3J0ICovCgojdmFuaWxsYS1jb21tZW50cywKCi8qIE1vdGhlciBOYXR1cmUgTmV0d29yayAqLwoKLnJlcGxpZXMtd3JhcHBlciA+IC5yZXBsaWVzLAoudmlldy1jb21tZW50LWxpc3QsCgovKiBOZXcgSmFsb3BuaWsgKGFuZCBHYXdrZXI/KSAqLwoKLmpzX3JlcGxpZXMsCgovKiBUU04uY2EgKi8KCiN0c25Zb3VyQ2FsbFN0b3J5LAoKLyogSFMuZmkgKi8KCiNrb21tZW50aXQsCgovKiBOZXdzQmx1ciAqLwoKLk5CLWZlZWQtc3RvcnktY29tbWVudHMsCgovKiBSdXNzaWEgVG9kYXkgKi8KLmItY29tbWVudHNfcGFnZSwKCi8qIEhlYXJzdCBzaXRlcyAqLwouaGRuLWNvbW1lbnRzLAoKLyogQ294IE1lZGlhIHNpdGVzICovCiNjbUNvbW1lbnRzLAoKLyogY2xldmVsYW5kLmNvbSAqLwoucnRiLWFwcHMtY29tbWVudHMtY29udGFpbmVyLAoKLyogZGVyc3RhbmRhcmQuYXQgKi8KLmNvbW11bml0eUNhbnZhcywKCi8qIHByZXNzZS5hdCAqLwojY29tbWVudGJveCwKI25ld2NvbW1lbnRmb3JtLAoKLyoga2EtbmV3cy5kZSAqLwojUXVpY2tSZWdDb24sCgovKiB0YWdlc3NjaGF1LmRlICovCi5tb2RDb24ubW9kQ29uQ29tbWVudHMsCgovKiB0YXouZGUgKi8KLmZ1bGwuY29tbXVuaXR5LnBhZ2UubGFzdC5ldmVuLAoKLyogc3BpZWdlbC5kZSAqLwouY2xlYXJmaXguYXJ0aWNsZS1jb21tZW50cy1ib3gubW9kdWxlLWJveCwKCi8qIGhhbmRlbHNibGF0dC5jb20gKi8KLmhjZi1hcnRpY2xlLmhjZi1jb250ZW50LmhjZi1hcnRpY2xlLXR5cGUyLAoKLyogZnItb25saW5lLmRlICovCiNjb21tZW50c1Jvb3QsCi5Db21tZW50LAoKLyogaHVmZmluZ3RvbnBvc3QuZGUgKi8KI2NvbnZlcnNhdGlvbnMtaHVmZnBvc3Qtd2ViLW1haW4sCgovKiB0YWdlc3NwaWVnZWwuZGUqLwojaGNmLWNvbW1lbnQtd3JhcHBlci5oY2YtY29tbWVudHMsCiNjb21tZW50SW5wdXQuaGNmLWNvbW1lbnRzLWlucHV0LAouaGNmLWNvbW1lbnRzLAoKLyogd2l3by5kZSAqLwouaGNmLWRldGFpbC5oY2YtY29tbWVudHMtY29udGFpbmVyLAoKLyogYXJzdGVjaG5pY2EuY29tICovCgphc2lkZS5jb21tZW50cy1ob3RuZXNzLAphLmNvbW1lbnQtY291bnQsCmRpdi5jb21tZW50cy1iYXIsCgovKiB0cmFrdC50diAqLwoKLnN1bW1hcnktY29tbWVudHMsCgovKiBLb3Rha3UgKi8KLnBvc3QtY29udGVudCAuYW5ub3RhdGlvbi1mb290bm90ZS13cmFwcGVyLAoucG9zdC1jb250ZW50IC5hbm5vdGF0ZUJ1dHRvbiwKCi8qIGltZ3VyICovCiNjb21tZW50cy1jb250YWluZXIsCgovKiBDdXJiZWQgKi8KLnBvc3QtY29tbWVudHMtbW9kdWxlLAojY29tbWVudHMtY291bnQsCi5jb21tZW50cy1ib2R5LWNvbnRhaW5lciwKCi8qIFBvbHlnb24gKi8KLm0taGVyb19fY29tbWVudC1jb3VudCwKLmNvbW1lbnRfY291bnQsCgovKiBTQiBOYXRpb24gKi8KLm0tY29tbWVudC1jb3VudF9fYnViYmxlLAoubS1zdHJlYW1fX25vZGUtbGlzdF9fY29tbWVudHMsCgovKiBUaGUgVmVyZ2UgKi8KLnAtY29tbWVudC1jb3VudCwKLnAtZW50cnktaGVhZGVyX19jb21tZW50cywKCi8qIGxlbW9uZGUuZnIgKi8KLmxpc3RlX3JlYWN0aW9ucywKCi8qIGxlZmlnYXJvLmZyICovCiNyZWFnaXIsCgovKiBydWU4OS5ub3V2ZWxvYnMuY29tICovCiNjb21tZW50YWlyZXMsCgovKiBudW1lcmFtYS5jb20gKi8KLmNvbW1lbnRhaXJlcywKCi8qIGh1ZmZpbmd0b25wb3N0LmZyICovCiNjb252ZXJzYXRpb25zLWh1ZmZwb3N0LXdlYiwKCi8qIENpdmlsIENvbW1lbnRzICovCiNjaXZpbC1jb21tZW50cywKCi8qIDlnYWcgKi8KLnBvc3QtY29tbWVudCwKCi8qIEVuZ2FkZ2V0IChDb25mYWIpICovCi5jb25mYWIsCgovKiBHYW1hc3V0cmEgKi8KI2R5bmFtaWNjb21tZW50cywKCi8qIEdhbWVTcG90ICovCi5jb21tZW50cy1ibG9jaywKCi8qIExJTkUgV2VidG9vbiAqLwouY29tbWVudF9hcmVhLAoKLyogTkFWRVIgTmV3cyAqLwojY2JveF9tb2R1bGUsCgovKiBEQVVNIE5ld3MgKi8KLm1lZGlhX2NvbW1lbnQsCi5ib3hfY29tbWVudCwKCi8qIFJhZGlvLUNhbmFkYSAqLwoudmlhZm91cmEsCgovKiBNZWRpdW0gKi8KLnJlc3BvbnNlc1dyYXBwZXIsCgovKiBHMSBhbmQgR2xvYm8gKi8KI2JveENvbWVudGFyaW9zLAoKLyogVU9MICovCiNjb21lbnRhcmlvcywKCi8qIEZvbGhhICovCiNhcnRpY2xlLWNvbW1lbnRzLAoKLyogVmVqYSAqLwouYWJyaWwtY29tZW50YXJpb3Mtd2lkZ2V0LAoKLyogVksgKi8KLnJlcGxpZXNfd3JhcCA+IGRpdjpmaXJzdC1jaGlsZCwKI3B2X2NvbW1lbnRzLndhbGxfbW9kdWxlLAojbXZfY29tbWVudHMud2FsbF9tb2R1bGUsCgovKiBEYWlseW1vdGlvbiAqLwoucGxfdmlkZW9fY29tbWVudF9wb3N0X2FuZF9jb21tZW50cywKCi8qIAogKiBudS5ubCBhbmQgb3RoZXIgRHV0Y2ggd2Vic2l0ZXMgdGhhdCB1c2UgdGhlICdyZWFjdGllcycgYW5kICdyZWFjdGllQ29udGFpbmVyJyBjbGFzcwoqLwoucmVhY3RpZXMsIC8qIG51Lm5sICovCi5yZWFjdGllQ29udGFpbmVyLCAvKiB0d2Vha2Vycy5uZXQgKi8KCi8qIGludmVzdG9yLmJnIGFuZCBwb3NzaWJseSBvdGhlcnMgKi8KCi5jb21tZW50c19hcnRpY2xlLAojY29tbWVudHMtZnJhbWUsCgovKiAuLi5taXNjLi4uICovCgojY29tbWVudGxpc3QsCi5kaXNjdXNzaW9uQ29udGFpbmVyLAouY29tbWVudEJveFN0eWxlLAoucGFnZWNvbW1lbnQsCi5wYWdlY29tbWVudGhlYWRlciwKLmNvbV90ZXh0LAouY29tbWVudHR4dCwKLnBvc3QtY29tbWVudCwKLnBvc3QtY29tbWVudHMsCi5wb3N0LWNvbW1lbnQtbGlzdCwKI2NtdFdyYXBwZXIKCnsKCWRpc3BsYXk6IG5vbmUgIWltcG9ydGFudDsKfQoKLyogaGlnaGxpZ2h0LmpzICovCmNvZGUgc3Bhbi5jb21tZW50IHsKCWRpc3BsYXk6IGlubGluZSAhaW1wb3J0YW50Owp9Cg==">
+<link rel="search" type="application/opensearchdescription+xml" href="https://meta.discourse.org/opensearch.xml">
+
+    
+
+<style>
+  @font-face {
+    font-family: 'FontAwesome';
+    src: url('https://cdn-enterprise.discourse.org/meta/assets/fontawesome-webfont-ff82aeed6b9bb6701696c84d1b223d2e682eb78c89117a438ce6cfea8c498995.woff2?https://meta.discourse.org&amp;2&v=4.5.0') format('woff2'),
+         url('https://cdn-enterprise.discourse.org/meta/assets/fontawesome-webfont-c812ddc9e475d3e65d68a6b3b589ce598a2a5babb7afc55477d59215c4a38a40.woff?https://meta.discourse.org&amp;2&v=4.5.0') format('woff');
+  }
+</style>
+
+      <link href="./Discourse Meta_files/desktop_4325bb6a4d5ffad248d8817f936c9dd3a7b59f4c.css" media="all" rel="stylesheet">
+
+
+  <link class="custom-css" rel="stylesheet" href="./Discourse Meta_files/7e202ef2-56d7-47d5-98d8-a9c8d15e57dd.css" type="text/css" media="all">
+
+    <meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="8uU/Qn5ER6zhYgaX1Yj0tOqOSRDQp9Z9jdax3heSpuydeJG2BDoJgLnsa9DDkSYzBRY2O0c3rCgmXGJOu+wGPw==">
+
+      <meta name="fragment" content="!">
+
+
+    <script>
+      window.EmberENV = window.EmberENV || {};
+      window.EmberENV['FORCE_JQUERY'] = true;
+    </script>
+
+    <script src="./Discourse Meta_files/en-d7103ca9bcffb6dcc96f98dc1633d4398df558a506c6bf2a2305db038ba0d6bc.js"></script>
+    <script src="./Discourse Meta_files/ember_jquery-c9524b48466ee05bcf3f9ddaf05405387eb17017e61e90e76628f989db37eb4e.js"></script>
+    <script src="./Discourse Meta_files/preload-store-9a5d6688476c54b0eb6e11cf444ab9dc19602f99f10114228f41fe605c31ac4d.js"></script>
+    <script src="./Discourse Meta_files/vendor-a93744409a58d62786bcae2e275b684754dbf7346ccc4521813c5c40dc7b3a5a.js"></script>
+    <script src="./Discourse Meta_files/pretty-text-bundle-dba14e3814149a96fd1e92eddc84554103c441903db196495af97ea3c9d739f3.js"></script>
+    <script src="./Discourse Meta_files/application-7c87a13364f2cd2bd7e278b2cdacef364a44822416807e54e3521df517c7ca82.js"></script>
+
+
+      
+
+
+    
+    <link rel="manifest" href="https://meta.discourse.org/manifest.json">
+
+        <link rel="alternate" type="application/rss+xml" title="Latest posts" href="https://meta.discourse.org/posts.rss">
+    <link rel="alternate" type="application/rss+xml" title="Latest topics" href="https://meta.discourse.org/latest.rss">
+
+  <style id="image-sizing-hack">#reply-control .d-editor-preview img:not(.thumbnail), .cooked img:not(.thumbnail) {max-width:690px;max-height:500px;}</style><style id="style-1-cropbar-clipper">/* Copyright 2014 Evernote Corporation. All rights reserved. */
+.en-markup-crop-options {
+    top: 18px !important;
+    left: 50% !important;
+    margin-left: -100px !important;
+    width: 200px !important;
+    border: 2px rgba(255,255,255,.38) solid !important;
+    border-radius: 4px !important;
+}
+
+.en-markup-crop-options div div:first-of-type {
+    margin-left: 0px !important;
+}
+</style></head>
+
+  <body class="docked" data-pinterest-extension-installed="cr1.39.2">
+    
+
+    <div class="debug-eyeline"></div>
+
+    
+
+      
+
+
+    <section id="main" class="ember-application">
+    <div id="ember784" class="ember-view">
+<div id="ember808" class="ember-view"><!----><header class="d-header clearfix"><div class="wrap"><div class="contents clearfix"><div class="title"><a href="https://meta.discourse.org/" data-auto-route="true"><img src="./Discourse Meta_files/9d543e92b15b06924249654667a81441a55867eb_1_690x184.png" alt="Discourse Meta" id="site-logo" class="logo-big"></a></div><div class="panel clearfix"><span></span><ul role="navigation" class="icons clearfix"><li class="header-dropdown-toggle"><a href="https://meta.discourse.org/search" data-auto-route="true" title="search topics, posts, users, or categories" aria-label="search topics, posts, users, or categories" id="search-button" class="icon"><i class="fa fa-search" aria-hidden="true"></i></a></li><li class="header-dropdown-toggle"><a data-auto-route="true" title="go to another topic list or category" aria-label="go to another topic list or category" id="toggle-hamburger-menu" class="icon"><i class="fa fa-bars" aria-hidden="true"></i></a></li><li id="current-user" class="header-dropdown-toggle current-user"><a href="https://meta.discourse.org/users/metakermit" data-auto-route="true" class="icon"><div><img alt="" width="32" height="32" src="./Discourse Meta_files/50981_1.png" title="metakermit" class="avatar"></div></a></li></ul></div></div></div></header></div>
+
+<div id="main-outlet" class="wrap" style="padding-bottom: 0px;">
+  <div class="container">
+      
+
+    <div id="ember821" class="ember-view"></div>
+    <div id="ember832" class="ember-view hidden create-topics-notice"><!----></div>
+  </div>
+  <div class="container">
+  <div id="ember967" class="ember-view"></div>
+</div>
+
+<div class="list-controls">
+  <div class="container">
+    <ol id="ember990" class="ember-view category-breadcrumb"><li id="ember1013" class="ember-view no-category has-drop bullet">    <a href="https://meta.discourse.org/" class="badge-category home" data-ember-action="1014" style="background-color: #eee; color: #333" aria-label="Display category list" aria-expanded="false">all categories</a>
+
+  <a href="https://meta.discourse.org/" data-ember-action="1016" class="badge-category category-dropdown-button home" style="background-color: #eee; color: #333"><i class="fa fa-caret-right"></i></a>
+  <section class="hidden category-dropdown-menu chooser}}">
+    <div class="cat"><a data-drop-close="true" class="badge-category home" href="https://meta.discourse.org/">all categories</a></div>
+<!----><!---->  </section>
+</li>
+
+<!---->
+  <li id="ember1026" class="ember-view tag-drop no-category bullet tag_all"><!----></li>
+
+<!---->
+
+<div class="clear"></div>
+</ol>
+
+<ul id="ember1003" class="ember-view nav nav-pills">  <li id="ember1039" class="ember-view active" title="topics with recent posts"><a href="https://meta.discourse.org/latest">Latest</a></li>
+  <li id="ember1040" class="ember-view" title="topics created in the last few days"><a href="https://meta.discourse.org/new">New (20)</a></li>
+  <li id="ember1041" class="ember-view has-icon" title="topics you are currently watching or tracking with unread posts"><a href="https://meta.discourse.org/unread"><span class="unread"></span>Unread (5)</a></li>
+  <li id="ember1042" class="ember-view" title="all topics grouped by category"><a href="https://meta.discourse.org/categories">Categories</a></li>
+  <li id="ember1043" class="ember-view" title="the most active topics in the last year, month, week or day"><a href="https://meta.discourse.org/top">Top</a></li>
+  <li id="ember1044" class="ember-view" title="Open Bugs"><a href="https://meta.discourse.org/c/bug/l/top/quarterly?status=open">Bugs</a></li>
+  <li id="ember1045" class="ember-view" title="Open Feature Requests"><a href="https://meta.discourse.org/category/feature?order=op_likes&amp;status=open">Features</a></li>
+<!---->
+</ul>
+
+  <button id="create-topic" class="btn btn-default" data-ember-action="1046"><i class="fa fa-plus"></i>New Topic</button>
+
+  </div>
+</div>
+
+<div id="ember976" class="ember-view"><!----></div>
+
+<div class="container list-container ">
+  <div class="row">
+    <div class="full-width">
+      <div id="header-list-area">
+        <!---->
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="full-width">
+      <div id="list-area">
+        <div id="ember981" class="ember-view discovery-list-container-top-outlet discourse-adplugin"><!----><!----><!----></div>
+        <!---->
+<!---->
+<div id="ember1055" class="ember-view"><!----></div>
+
+<div id="ember1071" class="ember-view contents"><!---->
+      <table id="ember1081" class="ember-view topic-list">  <thead>
+    <tr><th data-sort-order="default" class="default">Topic</th>
+
+  <th data-sort-order="category" class="category sortable">Category</th>
+
+  <th data-sort-order="posters" class="posters">Users</th>
+
+<th data-sort-order="posts" class="posts sortable num">Replies</th>
+
+<th data-sort-order="views" class="views sortable num">Views</th>
+
+<th data-sort-order="activity" class="activity sortable num">Activity</th>
+
+</tr>
+  </thead>
+<tbody>
+    <tr id="ember1098" class="ember-view topic-list-item category-hosting" data-topic-id="47710">
+<td class="main-link clearfix" colspan="1">
+  
+  <a href="https://meta.discourse.org/t/discourse-has-stopped-opening/47710" class="title">Discourse has stopped opening</a>
+  
+    <span class="topic-post-badges">
+</span>
+
+  
+  
+</td>
+
+    <td class="category"><a class="badge-wrapper bullet" href="https://meta.discourse.org/c/hosting"><span class="badge-category-bg" style="background-color: #74CCED;"></span><span style="color: #FFFFFF;" data-drop-close="true" class="badge-category clear-badge" title="Topics about hosting Discourse, either on your own servers, in the cloud, or with specific hosting services.">hosting</span></a></td>
+
+
+  <td class="posters">
+<a href="https://meta.discourse.org/users/itamerlanium" data-user-card="itamerlanium" class=""><img alt="" width="25" height="25" src="./Discourse Meta_files/56833_1.png" class="avatar" title="itamerlanium - Original Poster"></a>
+<a href="https://meta.discourse.org/users/falco" data-user-card="Falco" class=""><img alt="" width="25" height="25" src="./Discourse Meta_files/18952_1.png" class="avatar" title="Falco - Frequent Poster"></a>
+<a href="https://meta.discourse.org/users/riking" data-user-card="riking" class=""><img alt="" width="25" height="25" src="./Discourse Meta_files/47647_1.png" class="avatar" title="riking - Frequent Poster"></a>
+<a href="https://meta.discourse.org/users/tgxworld" data-user-card="tgxworld" class=""><img alt="" width="25" height="25" src="./Discourse Meta_files/48529_1.png" class="avatar" title="tgxworld - Frequent Poster"></a>
+<a href="https://meta.discourse.org/users/cpradio" data-user-card="cpradio" class="latest"><img alt="" width="25" height="25" src="./Discourse Meta_files/4970_1.png" class="avatar latest" title="cpradio - Most Recent Poster"></a>
+</td>
+
+
+<td class="num posts-map posts heatmap-med" title="This topic has 34 replies with a very high like to post ratio">
+  <a href="https://meta.discourse.org/" class="posts-map badge-posts heatmap-med"><span class="number" title="34">34</span></a>
+</td>
+
+
+
+
+
+<td class="num views "><span class="number" title="this topic has been viewed 500 times">500</span></td>
+
+<td class="num age coldmap-low activity" title="First post: July 24, 2016 1:38pm
+Last post: August 8, 2016 1:09pm"><a href="https://meta.discourse.org/t/discourse-has-stopped-opening/47710/38"><span class="relative-date" data-time="1470654584366" data-format="tiny">8m</span></a></td>
+
+</tr>
+    <tr id="ember1114" class="ember-view topic-list-item category-plugin" data-topic-id="38501">
+<td class="main-link clearfix" colspan="1">
+  
+  <a href="https://meta.discourse.org/t/abbreviations-and-acronyms-plugin/38501" class="title">Abbreviations and acronyms plugin</a>
+  
+    <span class="topic-post-badges">
+</span>
+
+  
+  
+</td>
+
+    <td class="category"><a class="badge-wrapper bullet" href="https://meta.discourse.org/c/plugin"><span class="badge-category-bg" style="background-color: #F7941D;"></span><span style="color: #FFFFFF;" data-drop-close="true" class="badge-category clear-badge" title="Plugin directory. To post here, message a Staff member and ask for access. One post per plugin please.">plugin</span></a></td>
+
+
+  <td class="posters">
+<a href="https://meta.discourse.org/users/blacksheep" data-user-card="BlackSheep" class=""><img alt="" width="25" height="25" src="./Discourse Meta_files/50170_1.png" class="avatar" title="BlackSheep - Original Poster"></a>
+<a href="https://meta.discourse.org/users/downey" data-user-card="downey" class=""><img alt="" width="25" height="25" src="./Discourse Meta_files/52083_1.png" class="avatar" title="downey - Frequent Poster"></a>
+<a href="https://meta.discourse.org/users/psbrandt" data-user-card="psbrandt" class=""><img alt="" width="25" height="25" src="./Discourse Meta_files/58232_1.png" class="avatar" title="psbrandt - Frequent Poster"></a>
+<a href="https://meta.discourse.org/users/meglio" data-user-card="meglio" class=""><img alt="" width="25" height="25" src="./Discourse Meta_files/33480_1.png" class="avatar" title="meglio - Frequent Poster"></a>
+<a href="https://meta.discourse.org/users/cpradio" data-user-card="cpradio" class="latest"><img alt="" width="25" height="25" src="./Discourse Meta_files/4970_1.png" class="avatar latest" title="cpradio - Most Recent Poster"></a>
+</td>
+
+
+<td class="num posts-map posts heatmap-high" title="This topic has 22 replies with an extremely high like to post ratio">
+  <a href="https://meta.discourse.org/" class="posts-map badge-posts heatmap-high"><span class="number" title="22">22</span></a>
+</td>
+
+
+
+
+
+<td class="num views heatmap-low"><span class="number" title="this topic has been viewed 1502 times">1.5k</span></td>
+
+<td class="num age coldmap-high activity" title="First post: January 26, 2016 11:47am
+Last post: August 8, 2016 1:03pm"><a href="https://meta.discourse.org/t/abbreviations-and-acronyms-plugin/38501/24"><span class="relative-date" data-time="1470654237314" data-format="tiny">14m</span></a></td>
+
+</tr>
+    <tr id="ember1115" class="ember-view topic-list-item category-feature-rfc" data-topic-id="48352">
+<td class="main-link clearfix" colspan="1">
+  
+  <a href="https://meta.discourse.org/t/ritzy-rte-alternate-editor-compatibility/48352" class="title">Ritzy RTE Alternate Editor Compatibility?</a>
+  
+    <span class="topic-post-badges">
+<a href="https://meta.discourse.org/t/ritzy-rte-alternate-editor-compatibility/48352" class="badge badge-notification new-topic" title="new topic">new</a>
+</span>
+
+  
+  
+</td>
+
+    <td class="category"><a class="badge-wrapper bullet" href="https://meta.discourse.org/c/feature/rfc"><span class="badge-category-parent-bg" style="background-color: #0E76BD;"></span><span class="badge-category-bg" style="background-color: #33B0B0;"></span><span style="color: #FFFFFF;" data-drop-close="true" class="badge-category clear-badge" title="Request for Comments. ">RFC</span></a></td>
+
+
+  <td class="posters">
+<a href="https://meta.discourse.org/users/auriel" data-user-card="Auriel" class="latest single"><img alt="" width="25" height="25" src="./Discourse Meta_files/60140_1.png" class="avatar latest single" title="Auriel - Original Poster, Most Recent Poster"></a>
+</td>
+
+
+<td class="num posts-map posts heatmap-" title="This topic has 0 replies">
+  <a href="https://meta.discourse.org/" class="posts-map badge-posts heatmap-"><span class="number" title="0">0</span></a>
+</td>
+
+
+
+
+
+<td class="num views "><span class="number" title="this topic has been viewed 10 times">10</span></td>
+
+<td class="num age activity" title="First post: August 8, 2016 12:51pm
+Last post: August 8, 2016 12:51pm"><a href="https://meta.discourse.org/t/ritzy-rte-alternate-editor-compatibility/48352/1"><span class="relative-date" data-time="1470653462143" data-format="tiny">27m</span></a></td>
+
+</tr>
+    <tr id="ember1116" class="ember-view topic-list-item category-uncategorized" data-topic-id="48351">
+<td class="main-link clearfix" colspan="1">
+  
+  <a href="https://meta.discourse.org/t/sso-login-logout-issues/48351" class="title">SSO login &amp; logout issues</a>
+  
+    <span class="topic-post-badges">
+<a href="https://meta.discourse.org/t/sso-login-logout-issues/48351" class="badge badge-notification new-topic" title="new topic">new</a>
+</span>
+
+  
+  
+</td>
+
+    <td class="category"></td>
+
+
+  <td class="posters">
+<a href="https://meta.discourse.org/users/junaid_pk14" data-user-card="junaid_pk14" class="latest single"><img alt="" width="25" height="25" src="./Discourse Meta_files/25.png" class="avatar latest single" title="junaid_pk14 - Original Poster, Most Recent Poster"></a>
+</td>
+
+
+<td class="num posts-map posts heatmap-" title="This topic has 0 replies">
+  <a href="https://meta.discourse.org/" class="posts-map badge-posts heatmap-"><span class="number" title="0">0</span></a>
+</td>
+
+
+
+
+
+<td class="num views "><span class="number" title="this topic has been viewed 10 times">10</span></td>
+
+<td class="num age activity" title="First post: August 8, 2016 12:48pm
+Last post: August 8, 2016 12:48pm"><a href="https://meta.discourse.org/t/sso-login-logout-issues/48351/1"><span class="relative-date" data-time="1470653288993" data-format="tiny">30m</span></a></td>
+
+</tr>
+    <tr id="ember1117" class="ember-view topic-list-item category-support" data-topic-id="48248">
+<td class="main-link clearfix" colspan="1">
+  <div class="topic-statuses">
+<span title="This topic is closed; it no longer accepts new replies" class="topic-status"><i class="fa fa-lock"></i></span></div>
+
+  <a href="https://meta.discourse.org/t/hootsuite-doesnt-like-discourse-rss/48248" class="title">Hootsuite doesn’t like Discourse RSS</a>
+  
+    <span class="topic-post-badges">
+</span>
+
+  
+  
+</td>
+
+    <td class="category"><a class="badge-wrapper bullet" href="https://meta.discourse.org/c/support"><span class="badge-category-bg" style="background-color: #CEA9A9;"></span><span style="color: #FFFFFF;" data-drop-close="true" class="badge-category clear-badge" title="Support on configuring and using Discourse after it is up and running. For installation questions, use the install category.">support</span></a></td>
+
+
+  <td class="posters">
+<a href="https://meta.discourse.org/users/olea" data-user-card="olea" class=""><img alt="" width="25" height="25" src="./Discourse Meta_files/32305_1.png" class="avatar" title="olea - Original Poster"></a>
+<a href="https://meta.discourse.org/users/erlend_sh" data-user-card="erlend_sh" class=""><img alt="" width="25" height="25" src="./Discourse Meta_files/43866_1.png" class="avatar" title="erlend_sh - Frequent Poster"></a>
+<a href="https://meta.discourse.org/users/codinghorror" data-user-card="codinghorror" class="latest"><img alt="" width="25" height="25" src="./Discourse Meta_files/5297_1.png" class="avatar latest" title="codinghorror - Most Recent Poster, Frequent Poster"></a>
+</td>
+
+
+<td class="num posts-map posts heatmap-" title="This topic has 4 replies">
+  <a href="https://meta.discourse.org/" class="posts-map badge-posts heatmap-"><span class="number" title="4">4</span></a>
+</td>
+
+
+
+
+
+<td class="num views "><span class="number" title="this topic has been viewed 119 times">119</span></td>
+
+<td class="num age activity" title="First post: August 5, 2016 12:48pm
+Last post: August 8, 2016 12:09pm"><a href="https://meta.discourse.org/t/hootsuite-doesnt-like-discourse-rss/48248/5"><span class="relative-date" data-time="1470650973169" data-format="tiny">1h</span></a></td>
+
+</tr>
+    <tr id="ember1118" class="ember-view topic-list-item category-feature" data-topic-id="48347">
+<td class="main-link clearfix" colspan="1">
+  <div class="topic-statuses">
+<span title="This topic is closed; it no longer accepts new replies" class="topic-status"><i class="fa fa-lock"></i></span></div>
+
+  <a href="https://meta.discourse.org/t/filling-the-profile-setting-in-3-segments-request/48347" class="title">Filling the profile setting in 3 segments – request</a>
+  
+    <span class="topic-post-badges">
+<a href="https://meta.discourse.org/t/filling-the-profile-setting-in-3-segments-request/48347" class="badge badge-notification new-topic" title="new topic">new</a>
+</span>
+
+  
+  
+</td>
+
+    <td class="category"><a class="badge-wrapper bullet" href="https://meta.discourse.org/c/feature"><span class="badge-category-bg" style="background-color: #0E76BD;"></span><span style="color: #FFFFFF;" data-drop-close="true" class="badge-category clear-badge" title="Discussion about features or plugins of Discourse.">feature</span></a></td>
+
+
+  <td class="posters">
+<a href="https://meta.discourse.org/users/pad_pors" data-user-card="Pad_Pors" class=""><img alt="" width="25" height="25" src="./Discourse Meta_files/52016_1.png" class="avatar" title="Pad_Pors - Original Poster"></a>
+<a href="https://meta.discourse.org/users/erlend_sh" data-user-card="erlend_sh" class="latest"><img alt="" width="25" height="25" src="./Discourse Meta_files/43866_1.png" class="avatar latest" title="erlend_sh - Most Recent Poster"></a>
+</td>
+
+
+<td class="num posts-map posts heatmap-" title="This topic has 2 replies">
+  <a href="https://meta.discourse.org/" class="posts-map badge-posts heatmap-"><span class="number" title="2">2</span></a>
+</td>
+
+
+
+
+
+<td class="num views "><span class="number" title="this topic has been viewed 23 times">23</span></td>
+
+<td class="num age activity" title="First post: August 8, 2016 11:08am
+Last post: August 8, 2016 11:31am"><a href="https://meta.discourse.org/t/filling-the-profile-setting-in-3-segments-request/48347/3"><span class="relative-date" data-time="1470648698853" data-format="tiny">2h</span></a></td>
+
+</tr>
+    <tr id="ember1119" class="ember-view topic-list-item category-support" data-topic-id="48315">
+<td class="main-link clearfix" colspan="1">
+  
+  <a href="https://meta.discourse.org/t/issues-in-discourses-multi-site-configuration/48315" class="title">Issues in discourse’s multi-site configuration</a>
+  
+    <span class="topic-post-badges">
+<a href="https://meta.discourse.org/t/issues-in-discourses-multi-site-configuration/48315" class="badge badge-notification new-topic" title="new topic">new</a>
+</span>
+
+  
+  
+</td>
+
+    <td class="category"><a class="badge-wrapper bullet" href="https://meta.discourse.org/c/support"><span class="badge-category-bg" style="background-color: #CEA9A9;"></span><span style="color: #FFFFFF;" data-drop-close="true" class="badge-category clear-badge" title="Support on configuring and using Discourse after it is up and running. For installation questions, use the install category.">support</span></a></td>
+
+
+  <td class="posters">
+<a href="https://meta.discourse.org/users/hammad_abbasi" data-user-card="Hammad_Abbasi" class="latest"><img alt="" width="25" height="25" src="./Discourse Meta_files/25(1).png" class="avatar latest" title="Hammad_Abbasi - Original Poster, Most Recent Poster"></a>
+<a href="https://meta.discourse.org/users/arrowcircle" data-user-card="arrowcircle" class=""><img alt="" width="25" height="25" src="./Discourse Meta_files/49619_1.png" class="avatar" title="arrowcircle - Frequent Poster"></a>
+</td>
+
+
+<td class="num posts-map posts heatmap-" title="This topic has 5 replies">
+  <a href="https://meta.discourse.org/" class="posts-map badge-posts heatmap-"><span class="number" title="5">5</span></a>
+</td>
+
+
+
+
+
+<td class="num views "><span class="number" title="this topic has been viewed 84 times">84</span></td>
+
+<td class="num age activity" title="First post: August 7, 2016 10:57am
+Last post: August 8, 2016 10:30am"><a href="https://meta.discourse.org/t/issues-in-discourses-multi-site-configuration/48315/6"><span class="relative-date" data-time="1470645002790" data-format="tiny">3h</span></a></td>
+
+</tr>
+    <tr id="ember1120" class="ember-view topic-list-item category-uncategorized" data-topic-id="48317">
+<td class="main-link clearfix" colspan="1">
+  
+  <a href="https://meta.discourse.org/t/discourse-gender-and-online-forums/48317" class="title">Discourse, gender, and online forums</a>
+  
+    <span class="topic-post-badges">
+<a href="https://meta.discourse.org/t/discourse-gender-and-online-forums/48317" class="badge badge-notification new-topic" title="new topic">new</a>
+</span>
+
+  
+  
+</td>
+
+    <td class="category"></td>
+
+
+  <td class="posters">
+<a href="https://meta.discourse.org/users/sujato" data-user-card="sujato" class=""><img alt="" width="25" height="25" src="./Discourse Meta_files/32930_1.png" class="avatar" title="sujato - Original Poster"></a>
+<a href="https://meta.discourse.org/users/mittineague" data-user-card="Mittineague" class=""><img alt="" width="25" height="25" src="./Discourse Meta_files/40997_1.png" class="avatar" title="Mittineague - Frequent Poster"></a>
+<a href="https://meta.discourse.org/users/elijah" data-user-card="elijah" class=""><img alt="" width="25" height="25" src="./Discourse Meta_files/10302_1.png" class="avatar" title="elijah - Frequent Poster"></a>
+<a href="https://meta.discourse.org/users/mpalmer" data-user-card="mpalmer" class=""><img alt="" width="25" height="25" src="./Discourse Meta_files/45740_1.png" class="avatar" title="mpalmer - Frequent Poster"></a>
+<a href="https://meta.discourse.org/users/codinghorror" data-user-card="codinghorror" class="latest"><img alt="" width="25" height="25" src="./Discourse Meta_files/5297_1.png" class="avatar latest" title="codinghorror - Most Recent Poster"></a>
+</td>
+
+
+<td class="num posts-map posts heatmap-high" title="This topic has 11 replies with an extremely high like to post ratio">
+  <a href="https://meta.discourse.org/" class="posts-map badge-posts heatmap-high"><span class="number" title="11">11</span></a>
+</td>
+
+
+
+
+
+<td class="num views "><span class="number" title="this topic has been viewed 221 times">221</span></td>
+
+<td class="num age activity" title="First post: August 7, 2016 11:19am
+Last post: August 8, 2016 9:03am"><a href="https://meta.discourse.org/t/discourse-gender-and-online-forums/48317/13"><span class="relative-date" data-time="1470639796059" data-format="tiny">4h</span></a></td>
+
+</tr>
+    <tr id="ember1121" class="ember-view topic-list-item category-support" data-topic-id="48246">
+<td class="main-link clearfix" colspan="1">
+  
+  <a href="https://meta.discourse.org/t/discourse-tagging-pluging-improvement/48246" class="title">Discourse tagging pluging improvement</a>
+  
+    <span class="topic-post-badges">
+</span>
+
+  
+  
+</td>
+
+    <td class="category"><a class="badge-wrapper bullet" href="https://meta.discourse.org/c/support"><span class="badge-category-bg" style="background-color: #CEA9A9;"></span><span style="color: #FFFFFF;" data-drop-close="true" class="badge-category clear-badge" title="Support on configuring and using Discourse after it is up and running. For installation questions, use the install category.">support</span></a></td>
+
+
+  <td class="posters">
+<a href="https://meta.discourse.org/users/junaid_pk14" data-user-card="junaid_pk14" class="latest"><img alt="" width="25" height="25" src="./Discourse Meta_files/25.png" class="avatar latest" title="junaid_pk14 - Original Poster, Most Recent Poster"></a>
+<a href="https://meta.discourse.org/users/codinghorror" data-user-card="codinghorror" class=""><img alt="" width="25" height="25" src="./Discourse Meta_files/5297_1.png" class="avatar" title="codinghorror - Frequent Poster"></a>
+<a href="https://meta.discourse.org/users/neil" data-user-card="neil" class=""><img alt="" width="25" height="25" src="./Discourse Meta_files/5245_1.png" class="avatar" title="neil - Frequent Poster"></a>
+</td>
+
+
+<td class="num posts-map posts heatmap-" title="This topic has 3 replies">
+  <a href="https://meta.discourse.org/" class="posts-map badge-posts heatmap-"><span class="number" title="3">3</span></a>
+</td>
+
+
+
+
+
+<td class="num views "><span class="number" title="this topic has been viewed 125 times">125</span></td>
+
+<td class="num age activity" title="First post: August 5, 2016 11:32am
+Last post: August 8, 2016 7:49am"><a href="https://meta.discourse.org/t/discourse-tagging-pluging-improvement/48246/4"><span class="relative-date" data-time="1470635364641" data-format="tiny">5h</span></a></td>
+
+</tr>
+    <tr id="ember1122" class="ember-view topic-list-item category-support" data-topic-id="48308">
+<td class="main-link clearfix" colspan="1">
+  
+  <a href="https://meta.discourse.org/t/system-message-problems-have-been-found/48308" class="title">System message: “Problems have been found”</a>
+  
+    <span class="topic-post-badges">
+<a href="https://meta.discourse.org/t/system-message-problems-have-been-found/48308" class="badge badge-notification new-topic" title="new topic">new</a>
+</span>
+
+  
+  
+</td>
+
+    <td class="category"><a class="badge-wrapper bullet" href="https://meta.discourse.org/c/support"><span class="badge-category-bg" style="background-color: #CEA9A9;"></span><span style="color: #FFFFFF;" data-drop-close="true" class="badge-category clear-badge" title="Support on configuring and using Discourse after it is up and running. For installation questions, use the install category.">support</span></a></td>
+
+
+  <td class="posters">
+<a href="https://meta.discourse.org/users/timedoctor" data-user-card="TimeDoctor" class=""><img alt="" width="25" height="25" src="./Discourse Meta_files/17393_1.png" class="avatar" title="TimeDoctor - Original Poster"></a>
+<a href="https://meta.discourse.org/users/cpradio" data-user-card="cpradio" class=""><img alt="" width="25" height="25" src="./Discourse Meta_files/4970_1.png" class="avatar" title="cpradio - Frequent Poster"></a>
+<a href="https://meta.discourse.org/users/codinghorror" data-user-card="codinghorror" class=""><img alt="" width="25" height="25" src="./Discourse Meta_files/5297_1.png" class="avatar" title="codinghorror - Frequent Poster"></a>
+<a href="https://meta.discourse.org/users/tgxworld" data-user-card="tgxworld" class="latest"><img alt="" width="25" height="25" src="./Discourse Meta_files/48529_1.png" class="avatar latest" title="tgxworld - Most Recent Poster"></a>
+</td>
+
+
+<td class="num posts-map posts heatmap-" title="This topic has 4 replies">
+  <a href="https://meta.discourse.org/" class="posts-map badge-posts heatmap-"><span class="number" title="4">4</span></a>
+</td>
+
+
+
+
+
+<td class="num views "><span class="number" title="this topic has been viewed 113 times">113</span></td>
+
+<td class="num age activity" title="First post: August 7, 2016 7:32am
+Last post: August 8, 2016 7:11am"><a href="https://meta.discourse.org/t/system-message-problems-have-been-found/48308/5"><span class="relative-date" data-time="1470633113101" data-format="tiny">6h</span></a></td>
+
+</tr>
+    <tr id="ember1123" class="ember-view topic-list-item category-dev-sso" data-topic-id="48087">
+<td class="main-link clearfix" colspan="1">
+  
+  <a href="https://meta.discourse.org/t/sso-for-college-account/48087" class="title">SSO for College Account</a>
+  
+    <span class="topic-post-badges">
+</span>
+
+  
+  
+</td>
+
+    <td class="category"><a class="badge-wrapper bullet" href="https://meta.discourse.org/c/dev/sso"><span class="badge-category-parent-bg" style="background-color: #222;"></span><span class="badge-category-bg" style="background-color: #d47711;"></span><span style="color: #FFFFFF;" data-drop-close="true" class="badge-category clear-badge" title="For queries specifically about SSO (single sign on) and and login using third party providers (Google, Facebook, GitHub etc). See the official documentation on Discourse&#39;s SSO support.">sso</span></a></td>
+
+
+  <td class="posters">
+<a href="https://meta.discourse.org/users/richard_mohorovich" data-user-card="Richard_Mohorovich" class=""><img alt="" width="25" height="25" src="./Discourse Meta_files/60092_1.png" class="avatar" title="Richard_Mohorovich - Original Poster"></a>
+<a href="https://meta.discourse.org/users/mpalmer" data-user-card="mpalmer" class="latest"><img alt="" width="25" height="25" src="./Discourse Meta_files/45740_1.png" class="avatar latest" title="mpalmer - Most Recent Poster"></a>
+</td>
+
+
+<td class="num posts-map posts heatmap-" title="This topic has 6 replies">
+  <a href="https://meta.discourse.org/" class="posts-map badge-posts heatmap-"><span class="number" title="6">6</span></a>
+</td>
+
+
+
+
+
+<td class="num views "><span class="number" title="this topic has been viewed 141 times">141</span></td>
+
+<td class="num age activity" title="First post: August 2, 2016 1:05am
+Last post: August 8, 2016 5:21am"><a href="https://meta.discourse.org/t/sso-for-college-account/48087/7"><span class="relative-date" data-time="1470626493349" data-format="tiny">8h</span></a></td>
+
+</tr>
+    <tr id="ember1124" class="ember-view topic-list-item category-howto" data-topic-id="33090">
+<td class="main-link clearfix" colspan="1">
+  
+  <a href="https://meta.discourse.org/t/how-to-enable-piwik-analytics-on-discourse/33090" class="title">How to enable Piwik analytics on Discourse</a>
+  
+    <span class="topic-post-badges">
+</span>
+
+  
+  
+</td>
+
+    <td class="category"><a class="badge-wrapper bullet" href="https://meta.discourse.org/c/howto"><span class="badge-category-bg" style="background-color: #76923C;"></span><span style="color: #FFFFFF;" data-drop-close="true" class="badge-category clear-badge" title="Tutorial topics that describe how to set up, configure, or install Discourse using a specific platform or environment. Topics in this category may only be created by trust level 2 and up. ">howto</span></a></td>
+
+
+  <td class="posters">
+<a href="https://meta.discourse.org/users/erlend_sh" data-user-card="erlend_sh" class=""><img alt="" width="25" height="25" src="./Discourse Meta_files/43866_1.png" class="avatar" title="erlend_sh - Original Poster"></a>
+<a href="https://meta.discourse.org/users/riking" data-user-card="riking" class=""><img alt="" width="25" height="25" src="./Discourse Meta_files/47647_1.png" class="avatar" title="riking - Frequent Poster"></a>
+<a href="https://meta.discourse.org/users/sam" data-user-card="sam" class=""><img alt="" width="25" height="25" src="./Discourse Meta_files/5243_1.png" class="avatar" title="sam - Frequent Poster"></a>
+<a href="https://meta.discourse.org/users/eviltrout" data-user-card="eviltrout" class=""><img alt="" width="25" height="25" src="./Discourse Meta_files/5275_1.png" class="avatar" title="eviltrout - Frequent Poster"></a>
+<a href="https://meta.discourse.org/users/brahn" data-user-card="brahn" class="latest"><img alt="" width="25" height="25" src="./Discourse Meta_files/58952_1.png" class="avatar latest" title="brahn - Most Recent Poster"></a>
+</td>
+
+
+<td class="num posts-map posts heatmap-med" title="This topic has 17 replies with a very high like to post ratio">
+  <a href="https://meta.discourse.org/" class="posts-map badge-posts heatmap-med"><span class="number" title="17">17</span></a>
+</td>
+
+
+
+
+
+<td class="num views heatmap-low"><span class="number" title="this topic has been viewed 1199 times">1.2k</span></td>
+
+<td class="num age coldmap-high activity" title="First post: September 10, 2015 12:18pm
+Last post: August 8, 2016 3:59am"><a href="https://meta.discourse.org/t/how-to-enable-piwik-analytics-on-discourse/33090/18"><span class="relative-date" data-time="1470621560907" data-format="tiny">9h</span></a></td>
+
+</tr>
+    <tr id="ember1125" class="ember-view topic-list-item category-plugin" data-topic-id="41630">
+<td class="main-link clearfix" colspan="1">
+  
+  <a href="https://meta.discourse.org/t/topic-list-previews/41630" class="title">Topic List Previews</a>
+  
+    <span class="topic-post-badges">
+</span>
+
+  
+  
+</td>
+
+    <td class="category"><a class="badge-wrapper bullet" href="https://meta.discourse.org/c/plugin"><span class="badge-category-bg" style="background-color: #F7941D;"></span><span style="color: #FFFFFF;" data-drop-close="true" class="badge-category clear-badge" title="Plugin directory. To post here, message a Staff member and ask for access. One post per plugin please.">plugin</span></a></td>
+
+
+  <td class="posters">
+<a href="https://meta.discourse.org/users/angus" data-user-card="angus" class=""><img alt="" width="25" height="25" src="./Discourse Meta_files/37643_1.png" class="avatar" title="angus - Original Poster"></a>
+<a href="https://meta.discourse.org/users/tom_newsom" data-user-card="Tom_Newsom" class=""><img alt="" width="25" height="25" src="./Discourse Meta_files/41231_1.png" class="avatar" title="Tom_Newsom - Frequent Poster"></a>
+<a href="https://meta.discourse.org/users/ankhamax" data-user-card="Ankhamax" class=""><img alt="" width="25" height="25" src="./Discourse Meta_files/52785_1.png" class="avatar" title="Ankhamax - Frequent Poster"></a>
+<a href="https://meta.discourse.org/users/tobiaseigen" data-user-card="tobiaseigen" class=""><img alt="" width="25" height="25" src="./Discourse Meta_files/42053_1.png" class="avatar" title="tobiaseigen - Frequent Poster"></a>
+<a href="https://meta.discourse.org/users/pmusaraj" data-user-card="pmusaraj" class="latest"><img alt="" width="25" height="25" src="./Discourse Meta_files/55151_1.png" class="avatar latest" title="pmusaraj - Most Recent Poster"></a>
+</td>
+
+
+<td class="num posts-map posts heatmap-med" title="This topic has 325 replies with a very high like to post ratio">
+  <a href="https://meta.discourse.org/" class="posts-map badge-posts heatmap-med"><span class="number" title="325">325</span></a>
+</td>
+
+
+
+
+
+<td class="num views heatmap-high"><span class="number" title="this topic has been viewed 10100 times">10.1k</span></td>
+
+<td class="num age coldmap-med activity" title="First post: March 27, 2016 10:22pm
+Last post: August 8, 2016 3:01am"><a href="https://meta.discourse.org/t/topic-list-previews/41630/331"><span class="relative-date" data-time="1470618075976" data-format="tiny">10h</span></a></td>
+
+</tr>
+    <tr id="ember1126" class="ember-view topic-list-item category-bug" data-topic-id="48340">
+<td class="main-link clearfix" colspan="1">
+  
+  <a href="https://meta.discourse.org/t/select2-expand-choices-over-composer-in-tagging-group/48340" class="title">Select2 expand choices over composer in tagging group</a>
+  
+    <span class="topic-post-badges">
+<a href="https://meta.discourse.org/t/select2-expand-choices-over-composer-in-tagging-group/48340" class="badge badge-notification new-topic" title="new topic">new</a>
+</span>
+
+  
+  
+</td>
+
+    <td class="category"><a class="badge-wrapper bullet" href="https://meta.discourse.org/c/bug"><span class="badge-category-bg" style="background-color: #e9dd00;"></span><span style="color: #000000;" data-drop-close="true" class="badge-category clear-badge" title="A bug report means something is broken, preventing normal/typical use of Discourse. Do be sure to search prior to submitting bugs. Include repro steps, and only describe one bug per topic please.">bug</span></a></td>
+
+
+  <td class="posters">
+<a href="https://meta.discourse.org/users/fantasticfears" data-user-card="fantasticfears" class="latest single"><img alt="" width="25" height="25" src="./Discourse Meta_files/51902_1.png" class="avatar latest single" title="fantasticfears - Original Poster, Most Recent Poster"></a>
+</td>
+
+
+<td class="num posts-map posts heatmap-" title="This topic has 0 replies">
+  <a href="https://meta.discourse.org/" class="posts-map badge-posts heatmap-"><span class="number" title="0">0</span></a>
+</td>
+
+
+
+
+
+<td class="num views "><span class="number" title="this topic has been viewed 44 times">44</span></td>
+
+<td class="num age activity" title="First post: August 8, 2016 2:57am
+Last post: August 8, 2016 2:57am"><a href="https://meta.discourse.org/t/select2-expand-choices-over-composer-in-tagging-group/48340/1"><span class="relative-date" data-time="1470617830660" data-format="tiny">10h</span></a></td>
+
+</tr>
+    <tr id="ember1127" class="ember-view topic-list-item category-support" data-topic-id="25185">
+<td class="main-link clearfix" colspan="1">
+  
+  <a href="https://meta.discourse.org/t/how-to-anonymize-your-links-in-discourse/25185" class="title">How to anonymize your links in Discourse?</a>
+  
+    <span class="topic-post-badges">
+</span>
+
+  
+  
+</td>
+
+    <td class="category"><a class="badge-wrapper bullet" href="https://meta.discourse.org/c/support"><span class="badge-category-bg" style="background-color: #CEA9A9;"></span><span style="color: #FFFFFF;" data-drop-close="true" class="badge-category clear-badge" title="Support on configuring and using Discourse after it is up and running. For installation questions, use the install category.">support</span></a></td>
+
+
+  <td class="posters">
+<a href="https://meta.discourse.org/users/huey_le" data-user-card="Huey_Le" class=""><img alt="" width="25" height="25" src="./Discourse Meta_files/25(2).png" class="avatar" title="Huey_Le - Original Poster"></a>
+<a href="https://meta.discourse.org/users/lidel" data-user-card="lidel" class=""><img alt="" width="25" height="25" src="./Discourse Meta_files/41293_1.png" class="avatar" title="lidel - Frequent Poster"></a>
+<a href="https://meta.discourse.org/users/riking" data-user-card="riking" class=""><img alt="" width="25" height="25" src="./Discourse Meta_files/47647_1.png" class="avatar" title="riking - Frequent Poster"></a>
+<a href="https://meta.discourse.org/users/claas" data-user-card="claas" class=""><img alt="" width="25" height="25" src="./Discourse Meta_files/25(3).png" class="avatar" title="claas - Frequent Poster"></a>
+<a href="https://meta.discourse.org/users/codinghorror" data-user-card="codinghorror" class="latest"><img alt="" width="25" height="25" src="./Discourse Meta_files/5297_1.png" class="avatar latest" title="codinghorror - Most Recent Poster"></a>
+</td>
+
+
+<td class="num posts-map posts heatmap-low" title="This topic has 25 replies with a high like to post ratio">
+  <a href="https://meta.discourse.org/" class="posts-map badge-posts heatmap-low"><span class="number" title="25">25</span></a>
+</td>
+
+
+
+
+
+<td class="num views "><span class="number" title="this topic has been viewed 940 times">940</span></td>
+
+<td class="num age coldmap-high activity" title="First post: February 13, 2015 12:39am
+Last post: August 8, 2016 1:25am"><a href="https://meta.discourse.org/t/how-to-anonymize-your-links-in-discourse/25185/26"><span class="relative-date" data-time="1470612338253" data-format="tiny">12h</span></a></td>
+
+</tr>
+    <tr id="ember1128" class="ember-view topic-list-item category-dev-translations" data-topic-id="18151">
+<td class="main-link clearfix" colspan="1">
+  
+  <a href="https://meta.discourse.org/t/german-translation/18151" class="title">German translation</a>
+  
+    <span class="topic-post-badges">
+</span>
+
+  
+  
+</td>
+
+    <td class="category"><a class="badge-wrapper bullet" href="https://meta.discourse.org/c/dev/translations"><span class="badge-category-parent-bg" style="background-color: #222;"></span><span class="badge-category-bg" style="background-color: #808281;"></span><span style="color: #FFFFFF;" data-drop-close="true" class="badge-category clear-badge" title="This category is for discussion about localizing Discourse.">translations</span></a></td>
+
+
+  <td class="posters">
+<a href="https://meta.discourse.org/users/gerhard" data-user-card="gerhard" class=""><img alt="" width="25" height="25" src="./Discourse Meta_files/51748_1.png" class="avatar" title="gerhard - Original Poster"></a>
+<a href="https://meta.discourse.org/users/caffeine" data-user-card="caffeine" class=""><img alt="" width="25" height="25" src="./Discourse Meta_files/17828_1.png" class="avatar" title="caffeine - Frequent Poster"></a>
+<a href="https://meta.discourse.org/users/elberet" data-user-card="elberet" class=""><img alt="" width="25" height="25" src="./Discourse Meta_files/40021_1.png" class="avatar" title="elberet - Frequent Poster"></a>
+<a href="https://meta.discourse.org/users/fbender" data-user-card="fbender" class=""><img alt="" width="25" height="25" src="./Discourse Meta_files/46309_1.png" class="avatar" title="fbender - Frequent Poster"></a>
+<a href="https://meta.discourse.org/users/claas" data-user-card="claas" class="latest"><img alt="" width="25" height="25" src="./Discourse Meta_files/25(3).png" class="avatar latest" title="claas - Most Recent Poster"></a>
+</td>
+
+
+<td class="num posts-map posts heatmap-med" title="This topic has 28 replies with a very high like to post ratio">
+  <a href="https://meta.discourse.org/" class="posts-map badge-posts heatmap-med"><span class="number" title="28">28</span></a>
+</td>
+
+
+
+
+
+<td class="num views heatmap-med"><span class="number" title="this topic has been viewed 2802 times">2.8k</span></td>
+
+<td class="num age coldmap-high activity" title="First post: July 28, 2014 12:49am
+Last post: August 8, 2016 1:13am"><a href="https://meta.discourse.org/t/german-translation/18151/33"><span class="relative-date" data-time="1470611615134" data-format="tiny">12h</span></a></td>
+
+</tr>
+    <tr id="ember1129" class="ember-view topic-list-item category-ux" data-topic-id="47142">
+<td class="main-link clearfix" colspan="1">
+  
+  <a href="https://meta.discourse.org/t/material-design-stock-theme/47142" class="title">Material Design Stock Theme</a>
+  
+    <span class="topic-post-badges">
+</span>
+
+  
+  
+</td>
+
+    <td class="category"><a class="badge-wrapper bullet" href="https://meta.discourse.org/c/ux"><span class="badge-category-bg" style="background-color: #5F497A;"></span><span style="color: #FFFFFF;" data-drop-close="true" class="badge-category clear-badge" title="Discussion about the user interface of Discourse, how features are presented to the user in the client, including language and UI elements.">ux</span></a></td>
+
+
+  <td class="posters">
+<a href="https://meta.discourse.org/users/rewphus" data-user-card="rewphus" class=""><img alt="" width="25" height="25" src="./Discourse Meta_files/40027_1.png" class="avatar" title="rewphus - Original Poster"></a>
+<a href="https://meta.discourse.org/users/tkiblin" data-user-card="tkiblin" class=""><img alt="" width="25" height="25" src="./Discourse Meta_files/49008_1.png" class="avatar" title="tkiblin - Frequent Poster"></a>
+<a href="https://meta.discourse.org/users/idan" data-user-card="Idan" class=""><img alt="" width="25" height="25" src="./Discourse Meta_files/25(4).png" class="avatar" title="Idan - Frequent Poster"></a>
+<a href="https://meta.discourse.org/users/erlend_sh" data-user-card="erlend_sh" class=""><img alt="" width="25" height="25" src="./Discourse Meta_files/43866_1.png" class="avatar" title="erlend_sh - Frequent Poster"></a>
+<a href="https://meta.discourse.org/users/sethm" data-user-card="sethm" class="latest"><img alt="" width="25" height="25" src="./Discourse Meta_files/25(5).png" class="avatar latest" title="sethm - Most Recent Poster"></a>
+</td>
+
+
+<td class="num posts-map posts heatmap-med" title="This topic has 86 replies with a very high like to post ratio">
+  <a href="https://meta.discourse.org/" class="posts-map badge-posts heatmap-med"><span class="number" title="86">86</span></a>
+</td>
+
+
+
+
+
+<td class="num views heatmap-low"><span class="number" title="this topic has been viewed 1866 times">1.9k</span></td>
+
+<td class="num age coldmap-low activity" title="First post: July 12, 2016 5:14am
+Last post: August 7, 2016 11:03pm"><a href="https://meta.discourse.org/t/material-design-stock-theme/47142/92"><span class="relative-date" data-time="1470603801466" data-format="tiny">14h</span></a></td>
+
+</tr>
+    <tr id="ember1130" class="ember-view topic-list-item category-marketplace" data-topic-id="48312">
+<td class="main-link clearfix" colspan="1">
+  
+  <a href="https://meta.discourse.org/t/upgrade-discourse-from-version-0-9-8-3-to-current-on-good-karma-basis/48312" class="title">Upgrade Discourse from Version	0.9.8.3 to current on good karma basis</a>
+  
+    <span class="topic-post-badges">
+<a href="https://meta.discourse.org/t/upgrade-discourse-from-version-0-9-8-3-to-current-on-good-karma-basis/48312" class="badge badge-notification new-topic" title="new topic">new</a>
+</span>
+
+  
+  
+</td>
+
+    <td class="category"><a class="badge-wrapper bullet" href="https://meta.discourse.org/c/marketplace"><span class="badge-category-bg" style="background-color: #8C6238;"></span><span style="color: #FFFFFF;" data-drop-close="true" class="badge-category clear-badge" title="About commercial Discourse related stuff: jobs or paid gigs, plugins, themes, hosting, etc.">marketplace</span></a></td>
+
+
+  <td class="posters">
+<a href="https://meta.discourse.org/users/sebastian" data-user-card="Sebastian" class="latest"><img alt="" width="25" height="25" src="./Discourse Meta_files/18929_1.png" class="avatar latest" title="Sebastian - Original Poster, Most Recent Poster"></a>
+<a href="https://meta.discourse.org/users/erlend_sh" data-user-card="erlend_sh" class=""><img alt="" width="25" height="25" src="./Discourse Meta_files/43866_1.png" class="avatar" title="erlend_sh - Frequent Poster"></a>
+<a href="https://meta.discourse.org/users/riking" data-user-card="riking" class=""><img alt="" width="25" height="25" src="./Discourse Meta_files/47647_1.png" class="avatar" title="riking - Frequent Poster"></a>
+<a href="https://meta.discourse.org/users/dan_g" data-user-card="Dan_G" class=""><img alt="" width="25" height="25" src="./Discourse Meta_files/33423_1.png" class="avatar" title="Dan_G - Frequent Poster"></a>
+</td>
+
+
+<td class="num posts-map posts heatmap-" title="This topic has 6 replies">
+  <a href="https://meta.discourse.org/" class="posts-map badge-posts heatmap-"><span class="number" title="6">6</span></a>
+</td>
+
+
+
+
+
+<td class="num views "><span class="number" title="this topic has been viewed 132 times">132</span></td>
+
+<td class="num age activity" title="First post: August 7, 2016 9:27am
+Last post: August 7, 2016 10:11pm"><a href="https://meta.discourse.org/t/upgrade-discourse-from-version-0-9-8-3-to-current-on-good-karma-basis/48312/7"><span class="relative-date" data-time="1470600707287" data-format="tiny">15h</span></a></td>
+
+</tr>
+    <tr id="ember1131" class="ember-view topic-list-item category-support" data-topic-id="48326">
+<td class="main-link clearfix" colspan="1">
+  <div class="topic-statuses">
+<span title="This topic is closed; it no longer accepts new replies" class="topic-status"><i class="fa fa-lock"></i></span></div>
+
+  <a href="https://meta.discourse.org/t/how-do-i-quote-someone/48326" class="title">How do I quote someone?</a>
+  
+    <span class="topic-post-badges">
+<a href="https://meta.discourse.org/t/how-do-i-quote-someone/48326" class="badge badge-notification new-topic" title="new topic">new</a>
+</span>
+
+  
+  
+</td>
+
+    <td class="category"><a class="badge-wrapper bullet" href="https://meta.discourse.org/c/support"><span class="badge-category-bg" style="background-color: #CEA9A9;"></span><span style="color: #FFFFFF;" data-drop-close="true" class="badge-category clear-badge" title="Support on configuring and using Discourse after it is up and running. For installation questions, use the install category.">support</span></a></td>
+
+
+  <td class="posters">
+<a href="https://meta.discourse.org/users/steemitforum" data-user-card="steemitforum" class=""><img alt="" width="25" height="25" src="./Discourse Meta_files/25(6).png" class="avatar" title="steemitforum - Original Poster"></a>
+<a href="https://meta.discourse.org/users/dlynch158" data-user-card="dlynch158" class=""><img alt="" width="25" height="25" src="./Discourse Meta_files/25(7).png" class="avatar" title="dlynch158 - Frequent Poster"></a>
+<a href="https://meta.discourse.org/users/pfaffman" data-user-card="pfaffman" class=""><img alt="" width="25" height="25" src="./Discourse Meta_files/51024_1.png" class="avatar" title="pfaffman - Frequent Poster"></a>
+<a href="https://meta.discourse.org/users/zogstrip" data-user-card="zogstrip" class="latest"><img alt="" width="25" height="25" src="./Discourse Meta_files/8630_1.png" class="avatar latest" title="zogstrip - Most Recent Poster"></a>
+</td>
+
+
+<td class="num posts-map posts heatmap-" title="This topic has 4 replies">
+  <a href="https://meta.discourse.org/" class="posts-map badge-posts heatmap-"><span class="number" title="4">4</span></a>
+</td>
+
+
+
+
+
+<td class="num views "><span class="number" title="this topic has been viewed 85 times">85</span></td>
+
+<td class="num age activity" title="First post: August 7, 2016 6:41pm
+Last post: August 7, 2016 9:18pm"><a href="https://meta.discourse.org/t/how-do-i-quote-someone/48326/5"><span class="relative-date" data-time="1470597498578" data-format="tiny">16h</span></a></td>
+
+</tr>
+    <tr id="ember1132" class="ember-view topic-list-item category-feature" data-topic-id="28153">
+<td class="main-link clearfix" colspan="1">
+  
+  <a href="https://meta.discourse.org/t/sign-up-button-disappears-when-sso-is-enabled/28153" class="title">SIGN UP button disappears when SSO is enabled</a>
+  
+    <span class="topic-post-badges">
+</span>
+
+  
+  
+</td>
+
+    <td class="category"><a class="badge-wrapper bullet" href="https://meta.discourse.org/c/feature"><span class="badge-category-bg" style="background-color: #0E76BD;"></span><span style="color: #FFFFFF;" data-drop-close="true" class="badge-category clear-badge" title="Discussion about features or plugins of Discourse.">feature</span></a></td>
+
+
+  <td class="posters">
+<a href="https://meta.discourse.org/users/tobiaseigen" data-user-card="tobiaseigen" class=""><img alt="" width="25" height="25" src="./Discourse Meta_files/42053_1.png" class="avatar" title="tobiaseigen - Original Poster"></a>
+<a href="https://meta.discourse.org/users/riking" data-user-card="riking" class=""><img alt="" width="25" height="25" src="./Discourse Meta_files/47647_1.png" class="avatar" title="riking - Frequent Poster"></a>
+<a href="https://meta.discourse.org/users/deanmarktaylor" data-user-card="DeanMarkTaylor" class=""><img alt="" width="25" height="25" src="./Discourse Meta_files/6055_1.png" class="avatar" title="DeanMarkTaylor - Frequent Poster"></a>
+<a href="https://meta.discourse.org/users/downey" data-user-card="downey" class=""><img alt="" width="25" height="25" src="./Discourse Meta_files/52083_1.png" class="avatar" title="downey - Frequent Poster"></a>
+<a href="https://meta.discourse.org/users/jamesmarkcook" data-user-card="jamesmarkcook" class="latest"><img alt="" width="25" height="25" src="./Discourse Meta_files/59761_1.png" class="avatar latest" title="jamesmarkcook - Most Recent Poster"></a>
+</td>
+
+
+<td class="num posts-map posts heatmap-med" title="This topic has 16 replies with a very high like to post ratio">
+  <a href="https://meta.discourse.org/" class="posts-map badge-posts heatmap-med"><span class="number" title="16">16</span></a>
+</td>
+
+
+
+
+
+<td class="num views heatmap-low"><span class="number" title="this topic has been viewed 1170 times">1.2k</span></td>
+
+<td class="num age coldmap-high activity" title="First post: April 30, 2015 7:19pm
+Last post: August 7, 2016 9:10pm"><a href="https://meta.discourse.org/t/sign-up-button-disappears-when-sso-is-enabled/28153/17"><span class="relative-date" data-time="1470597008949" data-format="tiny">16h</span></a></td>
+
+</tr>
+    <tr id="ember1133" class="ember-view topic-list-item category-bug" data-topic-id="48290">
+<td class="main-link clearfix" colspan="1">
+  
+  <a href="https://meta.discourse.org/t/discoursehub-version-check-oddities/48290" class="title">DiscourseHub version check oddities</a>
+  
+    <span class="topic-post-badges">
+</span>
+
+  
+  
+</td>
+
+    <td class="category"><a class="badge-wrapper bullet" href="https://meta.discourse.org/c/bug"><span class="badge-category-bg" style="background-color: #e9dd00;"></span><span style="color: #000000;" data-drop-close="true" class="badge-category clear-badge" title="A bug report means something is broken, preventing normal/typical use of Discourse. Do be sure to search prior to submitting bugs. Include repro steps, and only describe one bug per topic please.">bug</span></a></td>
+
+
+  <td class="posters">
+<a href="https://meta.discourse.org/users/michaeld" data-user-card="michaeld" class="latest"><img alt="" width="25" height="25" src="./Discourse Meta_files/1594_1.png" class="avatar latest" title="michaeld - Original Poster, Most Recent Poster"></a>
+<a href="https://meta.discourse.org/users/codinghorror" data-user-card="codinghorror" class=""><img alt="" width="25" height="25" src="./Discourse Meta_files/5297_1.png" class="avatar" title="codinghorror - Frequent Poster"></a>
+<a href="https://meta.discourse.org/users/neil" data-user-card="neil" class=""><img alt="" width="25" height="25" src="./Discourse Meta_files/5245_1.png" class="avatar" title="neil - Frequent Poster"></a>
+</td>
+
+
+<td class="num posts-map posts heatmap-" title="This topic has 3 replies">
+  <a href="https://meta.discourse.org/" class="posts-map badge-posts heatmap-"><span class="number" title="3">3</span></a>
+</td>
+
+
+
+
+
+<td class="num views "><span class="number" title="this topic has been viewed 144 times">144</span></td>
+
+<td class="num age activity" title="First post: August 6, 2016 12:29pm
+Last post: August 7, 2016 8:45pm"><a href="https://meta.discourse.org/t/discoursehub-version-check-oddities/48290/4"><span class="relative-date" data-time="1470595512286" data-format="tiny">17h</span></a></td>
+
+</tr>
+    <tr id="ember1134" class="ember-view topic-list-item category-marketplace" data-topic-id="30972">
+<td class="main-link clearfix" colspan="1">
+  
+  <a href="https://meta.discourse.org/t/paid-membership-plugin-with-paypal-integration-version-3-0-2015-08-31/30972" class="title">«Paid Membership» plugin with PayPal integration! (version 3.0, 2015-08-31)</a>
+  
+    <span class="topic-post-badges">
+</span>
+
+    <div class="discourse-tags">
+      <a href="https://meta.discourse.org/tags/plugins" class="tag-plugins discourse-tag simple">plugins</a>
+    </div>
+  
+  
+</td>
+
+    <td class="category"><a class="badge-wrapper bullet" href="https://meta.discourse.org/c/marketplace"><span class="badge-category-bg" style="background-color: #8C6238;"></span><span style="color: #FFFFFF;" data-drop-close="true" class="badge-category clear-badge" title="About commercial Discourse related stuff: jobs or paid gigs, plugins, themes, hosting, etc.">marketplace</span></a></td>
+
+
+  <td class="posters">
+<a href="https://meta.discourse.org/users/dmitry_fedyuk" data-user-card="dmitry_fedyuk" class=""><img alt="" width="25" height="25" src="./Discourse Meta_files/42381_1.png" class="avatar" title="dmitry_fedyuk - Original Poster"></a>
+<a href="https://meta.discourse.org/users/michaeld" data-user-card="michaeld" class=""><img alt="" width="25" height="25" src="./Discourse Meta_files/1594_1.png" class="avatar" title="michaeld - Frequent Poster"></a>
+<a href="https://meta.discourse.org/users/geoff777" data-user-card="geoff777" class=""><img alt="" width="25" height="25" src="./Discourse Meta_files/43039_1.png" class="avatar" title="geoff777 - Frequent Poster"></a>
+<a href="https://meta.discourse.org/users/will_io" data-user-card="will_io" class=""><img alt="" width="25" height="25" src="./Discourse Meta_files/49174_1.png" class="avatar" title="will_io - Frequent Poster"></a>
+<a href="https://meta.discourse.org/users/jamesmarkcook" data-user-card="jamesmarkcook" class="latest"><img alt="" width="25" height="25" src="./Discourse Meta_files/59761_1.png" class="avatar latest" title="jamesmarkcook - Most Recent Poster"></a>
+</td>
+
+
+<td class="num posts-map posts heatmap-" title="This topic has 11 replies">
+  <a href="https://meta.discourse.org/" class="posts-map badge-posts heatmap-"><span class="number" title="11">11</span></a>
+</td>
+
+
+
+
+
+<td class="num views heatmap-med"><span class="number" title="this topic has been viewed 2440 times">2.4k</span></td>
+
+<td class="num age coldmap-high activity" title="First post: July 11, 2015 9:58am
+Last post: August 7, 2016 8:43pm"><a href="https://meta.discourse.org/t/paid-membership-plugin-with-paypal-integration-version-3-0-2015-08-31/30972/12"><span class="relative-date" data-time="1470595425752" data-format="tiny">17h</span></a></td>
+
+</tr>
+    <tr id="ember1135" class="ember-view topic-list-item category-support" data-topic-id="48327">
+<td class="main-link clearfix" colspan="1">
+  
+  <a href="https://meta.discourse.org/t/vultr-and-mailgun-instance-not-sending-mails-plugins/48327" class="title">Vultr and Mailgun instance not sending mails / plugins</a>
+  
+    <span class="topic-post-badges">
+<a href="https://meta.discourse.org/t/vultr-and-mailgun-instance-not-sending-mails-plugins/48327" class="badge badge-notification new-topic" title="new topic">new</a>
+</span>
+
+  
+  
+</td>
+
+    <td class="category"><a class="badge-wrapper bullet" href="https://meta.discourse.org/c/support"><span class="badge-category-bg" style="background-color: #CEA9A9;"></span><span style="color: #FFFFFF;" data-drop-close="true" class="badge-category clear-badge" title="Support on configuring and using Discourse after it is up and running. For installation questions, use the install category.">support</span></a></td>
+
+
+  <td class="posters">
+<a href="https://meta.discourse.org/users/djcyry" data-user-card="djcyry" class="latest"><img alt="" width="25" height="25" src="./Discourse Meta_files/51787_1.png" class="avatar latest" title="djcyry - Original Poster, Most Recent Poster"></a>
+<a href="https://meta.discourse.org/users/riking" data-user-card="riking" class=""><img alt="" width="25" height="25" src="./Discourse Meta_files/47647_1.png" class="avatar" title="riking - Frequent Poster"></a>
+</td>
+
+
+<td class="num posts-map posts heatmap-" title="This topic has 2 replies">
+  <a href="https://meta.discourse.org/" class="posts-map badge-posts heatmap-"><span class="number" title="2">2</span></a>
+</td>
+
+
+
+
+
+<td class="num views "><span class="number" title="this topic has been viewed 51 times">51</span></td>
+
+<td class="num age activity" title="First post: August 7, 2016 7:38pm
+Last post: August 7, 2016 8:38pm"><a href="https://meta.discourse.org/t/vultr-and-mailgun-instance-not-sending-mails-plugins/48327/3"><span class="relative-date" data-time="1470595104263" data-format="tiny">17h</span></a></td>
+
+</tr>
+    <tr id="ember1136" class="ember-view topic-list-item category-dev-translations" data-topic-id="48324">
+<td class="main-link clearfix" colspan="1">
+  
+  <a href="https://meta.discourse.org/t/meta-bug-non-plural-marked-strings/48324" class="title">Meta bug: non-plural marked strings</a>
+  
+    <span class="topic-post-badges">
+<a href="https://meta.discourse.org/t/meta-bug-non-plural-marked-strings/48324" class="badge badge-notification new-topic" title="new topic">new</a>
+</span>
+
+  
+  
+</td>
+
+    <td class="category"><a class="badge-wrapper bullet" href="https://meta.discourse.org/c/dev/translations"><span class="badge-category-parent-bg" style="background-color: #222;"></span><span class="badge-category-bg" style="background-color: #808281;"></span><span style="color: #FFFFFF;" data-drop-close="true" class="badge-category clear-badge" title="This category is for discussion about localizing Discourse.">translations</span></a></td>
+
+
+  <td class="posters">
+<a href="https://meta.discourse.org/users/safaalfulaij" data-user-card="SafaAlfulaij" class="latest single"><img alt="" width="25" height="25" src="./Discourse Meta_files/48515_1.png" class="avatar latest single" title="SafaAlfulaij - Original Poster, Most Recent Poster"></a>
+</td>
+
+
+<td class="num posts-map posts heatmap-" title="This topic has 0 replies">
+  <a href="https://meta.discourse.org/" class="posts-map badge-posts heatmap-"><span class="number" title="0">0</span></a>
+</td>
+
+
+
+
+
+<td class="num views "><span class="number" title="this topic has been viewed 47 times">47</span></td>
+
+<td class="num age activity" title="First post: August 7, 2016 6:29pm
+Last post: August 7, 2016 6:42pm"><a href="https://meta.discourse.org/t/meta-bug-non-plural-marked-strings/48324/1"><span class="relative-date" data-time="1470588179932" data-format="tiny">19h</span></a></td>
+
+</tr>
+    <tr id="ember1137" class="ember-view topic-list-item category-support" data-topic-id="41465">
+<td class="main-link clearfix" colspan="1">
+  
+  <a href="https://meta.discourse.org/t/uploads-and-profile-functions-broken-gives-ruby-error/41465" class="title">Uploads and profile functions broken, gives ruby error</a>
+  
+    <span class="topic-post-badges">
+</span>
+
+  
+  
+</td>
+
+    <td class="category"><a class="badge-wrapper bullet" href="https://meta.discourse.org/c/support"><span class="badge-category-bg" style="background-color: #CEA9A9;"></span><span style="color: #FFFFFF;" data-drop-close="true" class="badge-category clear-badge" title="Support on configuring and using Discourse after it is up and running. For installation questions, use the install category.">support</span></a></td>
+
+
+  <td class="posters">
+<a href="https://meta.discourse.org/users/figlet" data-user-card="figlet" class=""><img alt="" width="25" height="25" src="./Discourse Meta_files/51926_1.png" class="avatar" title="figlet - Original Poster"></a>
+<a href="https://meta.discourse.org/users/falco" data-user-card="Falco" class=""><img alt="" width="25" height="25" src="./Discourse Meta_files/18952_1.png" class="avatar" title="Falco - Frequent Poster"></a>
+<a href="https://meta.discourse.org/users/haikuos" data-user-card="haikuos" class="latest"><img alt="" width="25" height="25" src="./Discourse Meta_files/60148_1.png" class="avatar latest" title="haikuos - Most Recent Poster"></a>
+</td>
+
+
+<td class="num posts-map posts heatmap-" title="This topic has 6 replies">
+  <a href="https://meta.discourse.org/" class="posts-map badge-posts heatmap-"><span class="number" title="6">6</span></a>
+</td>
+
+
+
+
+
+<td class="num views "><span class="number" title="this topic has been viewed 408 times">408</span></td>
+
+<td class="num age coldmap-med activity" title="First post: March 23, 2016 9:24am
+Last post: August 7, 2016 4:33pm"><a href="https://meta.discourse.org/t/uploads-and-profile-functions-broken-gives-ruby-error/41465/8"><span class="relative-date" data-time="1470580400244" data-format="tiny">21h</span></a></td>
+
+</tr>
+    <tr id="ember1138" class="ember-view topic-list-item category-feature-rfc" data-topic-id="47494">
+<td class="main-link clearfix" colspan="1">
+  
+  <a href="https://meta.discourse.org/t/native-theme-support/47494" class="title">Native theme support</a>
+  
+    <span class="topic-post-badges">
+</span>
+
+  
+  
+</td>
+
+    <td class="category"><a class="badge-wrapper bullet" href="https://meta.discourse.org/c/feature/rfc"><span class="badge-category-parent-bg" style="background-color: #0E76BD;"></span><span class="badge-category-bg" style="background-color: #33B0B0;"></span><span style="color: #FFFFFF;" data-drop-close="true" class="badge-category clear-badge" title="Request for Comments. ">RFC</span></a></td>
+
+
+  <td class="posters">
+<a href="https://meta.discourse.org/users/sam" data-user-card="sam" class=""><img alt="" width="25" height="25" src="./Discourse Meta_files/5243_1.png" class="avatar" title="sam - Original Poster"></a>
+<a href="https://meta.discourse.org/users/steko" data-user-card="steko" class=""><img alt="" width="25" height="25" src="./Discourse Meta_files/47674_1.png" class="avatar" title="steko - Frequent Poster"></a>
+<a href="https://meta.discourse.org/users/ccdw" data-user-card="ccdw" class=""><img alt="" width="25" height="25" src="./Discourse Meta_files/25(8).png" class="avatar" title="ccdw - Frequent Poster"></a>
+<a href="https://meta.discourse.org/users/fefrei" data-user-card="fefrei" class=""><img alt="" width="25" height="25" src="./Discourse Meta_files/42973_1.png" class="avatar" title="fefrei - Frequent Poster"></a>
+<a href="https://meta.discourse.org/users/oskar" data-user-card="Oskar" class="latest"><img alt="" width="25" height="25" src="./Discourse Meta_files/8488_1.png" class="avatar latest" title="Oskar - Most Recent Poster"></a>
+</td>
+
+
+<td class="num posts-map posts heatmap-high" title="This topic has 16 replies with an extremely high like to post ratio">
+  <a href="https://meta.discourse.org/" class="posts-map badge-posts heatmap-high"><span class="number" title="16">16</span></a>
+</td>
+
+
+
+
+
+<td class="num views "><span class="number" title="this topic has been viewed 630 times">630</span></td>
+
+<td class="num age coldmap-low activity" title="First post: July 19, 2016 8:38am
+Last post: August 7, 2016 2:56pm"><a href="https://meta.discourse.org/t/native-theme-support/47494/17"><span class="relative-date" data-time="1470574598821" data-format="tiny">22h</span></a></td>
+
+</tr>
+    <tr id="ember1139" class="ember-view topic-list-item category-support" data-topic-id="48319">
+<td class="main-link clearfix" colspan="1">
+  <div class="topic-statuses">
+<span title="This topic is closed; it no longer accepts new replies" class="topic-status"><i class="fa fa-lock"></i></span><span title="This topic has a solution" class="topic-status"><i class="fa fa-check-square-o"></i></span></div>
+
+  <a href="https://meta.discourse.org/t/relation-scheduler-stats-does-not-exist/48319" class="title">Relation “scheduler_stats” does not exist</a>
+  
+    <span class="topic-post-badges">
+<a href="https://meta.discourse.org/t/relation-scheduler-stats-does-not-exist/48319" class="badge badge-notification new-topic" title="new topic">new</a>
+</span>
+
+  
+  
+</td>
+
+    <td class="category"><a class="badge-wrapper bullet" href="https://meta.discourse.org/c/support"><span class="badge-category-bg" style="background-color: #CEA9A9;"></span><span style="color: #FFFFFF;" data-drop-close="true" class="badge-category clear-badge" title="Support on configuring and using Discourse after it is up and running. For installation questions, use the install category.">support</span></a></td>
+
+
+  <td class="posters">
+<a href="https://meta.discourse.org/users/rumpelsepp" data-user-card="rumpelsepp" class=""><img alt="" width="25" height="25" src="./Discourse Meta_files/25(9).png" class="avatar" title="rumpelsepp - Original Poster"></a>
+<a href="https://meta.discourse.org/users/zogstrip" data-user-card="zogstrip" class="latest"><img alt="" width="25" height="25" src="./Discourse Meta_files/8630_1.png" class="avatar latest" title="zogstrip - Most Recent Poster"></a>
+</td>
+
+
+<td class="num posts-map posts heatmap-" title="This topic has 3 replies">
+  <a href="https://meta.discourse.org/" class="posts-map badge-posts heatmap-"><span class="number" title="3">3</span></a>
+</td>
+
+
+
+
+
+<td class="num views "><span class="number" title="this topic has been viewed 58 times">58</span></td>
+
+<td class="num age activity" title="First post: August 7, 2016 12:43pm
+Last post: August 7, 2016 2:45pm"><a href="https://meta.discourse.org/t/relation-scheduler-stats-does-not-exist/48319/4"><span class="relative-date" data-time="1470573937305" data-format="tiny">23h</span></a></td>
+
+</tr>
+    <tr id="ember1140" class="ember-view topic-list-item category-feature" data-topic-id="48299">
+<td class="main-link clearfix" colspan="1">
+  
+  <a href="https://meta.discourse.org/t/tag-explanation-feature-request/48299" class="title">Tag explanation - feature request</a>
+  
+    <span class="topic-post-badges">
+<a href="https://meta.discourse.org/t/tag-explanation-feature-request/48299" class="badge badge-notification new-topic" title="new topic">new</a>
+</span>
+
+  
+  
+</td>
+
+    <td class="category"><a class="badge-wrapper bullet" href="https://meta.discourse.org/c/feature"><span class="badge-category-bg" style="background-color: #0E76BD;"></span><span style="color: #FFFFFF;" data-drop-close="true" class="badge-category clear-badge" title="Discussion about features or plugins of Discourse.">feature</span></a></td>
+
+
+  <td class="posters">
+<a href="https://meta.discourse.org/users/pad_pors" data-user-card="Pad_Pors" class="latest"><img alt="" width="25" height="25" src="./Discourse Meta_files/52016_1.png" class="avatar latest" title="Pad_Pors - Original Poster, Most Recent Poster"></a>
+<a href="https://meta.discourse.org/users/jomaxro" data-user-card="jomaxro" class=""><img alt="" width="25" height="25" src="./Discourse Meta_files/47748_1.png" class="avatar" title="jomaxro - Frequent Poster"></a>
+<a href="https://meta.discourse.org/users/erlend_sh" data-user-card="erlend_sh" class=""><img alt="" width="25" height="25" src="./Discourse Meta_files/43866_1.png" class="avatar" title="erlend_sh - Frequent Poster"></a>
+</td>
+
+
+<td class="num posts-map posts heatmap-" title="This topic has 3 replies">
+  <a href="https://meta.discourse.org/" class="posts-map badge-posts heatmap-"><span class="number" title="3">3</span></a>
+</td>
+
+
+
+
+
+<td class="num views "><span class="number" title="this topic has been viewed 117 times">117</span></td>
+
+<td class="num age activity" title="First post: August 6, 2016 7:02pm
+Last post: August 7, 2016 1:47pm"><a href="https://meta.discourse.org/t/tag-explanation-feature-request/48299/4"><span class="relative-date" data-time="1470570437088" data-format="tiny">1d</span></a></td>
+
+</tr>
+    <tr id="ember1141" class="ember-view topic-list-item category-feature" data-topic-id="42271">
+<td class="main-link clearfix" colspan="1">
+  <div class="topic-statuses">
+<span title="This topic is closed; it no longer accepts new replies" class="topic-status"><i class="fa fa-lock"></i></span></div>
+
+  <a href="https://meta.discourse.org/t/a-feature-for-the-tagging-plugin-an-ability-to-set-a-description-for-a-tag-page-similar-to-the-categories-pages/42271" class="title">A feature for the «Tagging» plugin: an ability to set a description for a tag page similar to the categories pages</a>
+  
+    <span class="topic-post-badges">
+</span>
+
+  
+  
+</td>
+
+    <td class="category"><a class="badge-wrapper bullet" href="https://meta.discourse.org/c/feature"><span class="badge-category-bg" style="background-color: #0E76BD;"></span><span style="color: #FFFFFF;" data-drop-close="true" class="badge-category clear-badge" title="Discussion about features or plugins of Discourse.">feature</span></a></td>
+
+
+  <td class="posters">
+<a href="https://meta.discourse.org/users/dmitry_fedyuk" data-user-card="dmitry_fedyuk" class=""><img alt="" width="25" height="25" src="./Discourse Meta_files/42381_1.png" class="avatar" title="dmitry_fedyuk - Original Poster"></a>
+<a href="https://meta.discourse.org/users/neil" data-user-card="neil" class=""><img alt="" width="25" height="25" src="./Discourse Meta_files/5245_1.png" class="avatar" title="neil - Frequent Poster"></a>
+<a href="https://meta.discourse.org/users/codinghorror" data-user-card="codinghorror" class="latest"><img alt="" width="25" height="25" src="./Discourse Meta_files/5297_1.png" class="avatar latest" title="codinghorror - Most Recent Poster"></a>
+</td>
+
+
+<td class="num posts-map posts heatmap-" title="This topic has 3 replies">
+  <a href="https://meta.discourse.org/" class="posts-map badge-posts heatmap-"><span class="number" title="3">3</span></a>
+</td>
+
+
+
+
+
+<td class="num views "><span class="number" title="this topic has been viewed 249 times">249</span></td>
+
+<td class="num age coldmap-med activity" title="First post: April 9, 2016 2:25am
+Last post: August 7, 2016 12:27pm"><a href="https://meta.discourse.org/t/a-feature-for-the-tagging-plugin-an-ability-to-set-a-description-for-a-tag-page-similar-to-the-categories-pages/42271/4"><span class="relative-date" data-time="1470565667874" data-format="tiny">1d</span></a></td>
+
+</tr>
+    <tr id="ember1142" class="ember-view topic-list-item category-feature" data-topic-id="48303">
+<td class="main-link clearfix" colspan="1">
+  
+  <a href="https://meta.discourse.org/t/avoid-notification-warning/48303" class="title">Avoid notification warning</a>
+  
+    <span class="topic-post-badges">
+<a href="https://meta.discourse.org/t/avoid-notification-warning/48303" class="badge badge-notification new-topic" title="new topic">new</a>
+</span>
+
+  
+  
+</td>
+
+    <td class="category"><a class="badge-wrapper bullet" href="https://meta.discourse.org/c/feature"><span class="badge-category-bg" style="background-color: #0E76BD;"></span><span style="color: #FFFFFF;" data-drop-close="true" class="badge-category clear-badge" title="Discussion about features or plugins of Discourse.">feature</span></a></td>
+
+
+  <td class="posters">
+<a href="https://meta.discourse.org/users/mrjn" data-user-card="mrjn" class="latest"><img alt="" width="25" height="25" src="./Discourse Meta_files/55135_1.png" class="avatar latest" title="mrjn - Original Poster, Most Recent Poster"></a>
+<a href="https://meta.discourse.org/users/jomaxro" data-user-card="jomaxro" class=""><img alt="" width="25" height="25" src="./Discourse Meta_files/47748_1.png" class="avatar" title="jomaxro - Frequent Poster"></a>
+<a href="https://meta.discourse.org/users/codinghorror" data-user-card="codinghorror" class=""><img alt="" width="25" height="25" src="./Discourse Meta_files/5297_1.png" class="avatar" title="codinghorror - Frequent Poster"></a>
+</td>
+
+
+<td class="num posts-map posts heatmap-" title="This topic has 3 replies">
+  <a href="https://meta.discourse.org/" class="posts-map badge-posts heatmap-"><span class="number" title="3">3</span></a>
+</td>
+
+
+
+
+
+<td class="num views "><span class="number" title="this topic has been viewed 94 times">94</span></td>
+
+<td class="num age activity" title="First post: August 7, 2016 3:11am
+Last post: August 7, 2016 7:42am"><a href="https://meta.discourse.org/t/avoid-notification-warning/48303/4"><span class="relative-date" data-time="1470548526471" data-format="tiny">1d</span></a></td>
+
+</tr>
+</tbody>
+</table>
+</div>
+<footer class="topic-list-bottom">
+  <div id="ember1072" class="ember-view"><!----></div>
+<!----></footer>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!---->
+
+  <div id="user-card" class="ember-view show-badges"><!----></div>
+</div>
+
+<!---->
+<!----><!---->
+
+<div id="discourse-modal" class="ember-view modal hidden" data-keyboard="false"><div class="modal-outer-container">
+  <div class="modal-middle-container">
+    <div class="modal-inner-container">
+      <div class="modal-header">
+        <a class="close" data-ember-action="1143"><i class="fa fa-times"></i></a>
+        <h3><!----></h3>
+        <div class="clearfix"></div>
+      </div>
+      <div id="modal-alert"></div>
+      <div id="ember1165" class="ember-view"></div>
+<!---->    </div>
+  </div>
+</div>
+</div>
+<div id="topic-entrance" class="ember-view hidden"><button id="ember1153" class="ember-view full jump-top btn no-text">  <i class="fa fa-caret-up"></i> Jan 1, '70 <br>1:00 AM
+</button>
+<button id="ember1154" class="ember-view full jump-button btn no-text">  Jan 1, '70 <br>1:00 AM <i class="fa fa-caret-down"></i>
+</button></div>
+<div id="reply-control" class="ember-view closed processed"><div class="grippie"></div><!----></div>
+</div></section>
+
+    <div id="offscreen-content">
+    </div>
+
+
+      <script>
+      (function() {
+        var ps = require('preload-store').default;
+          ps.store("site", {"default_archetype":"regular","notification_types":{"mentioned":1,"replied":2,"quoted":3,"edited":4,"liked":5,"private_message":6,"invited_to_private_message":7,"invitee_accepted":8,"posted":9,"moved_post":10,"linked":11,"granted_badge":12,"invited_to_topic":13,"custom":14,"group_mentioned":15,"group_message_summary":16,"watching_first_post":17},"post_types":{"regular":1,"moderator_action":2,"small_action":3,"whisper":4},"groups":[{"id":1,"name":"admins"},{"id":62,"name":"codecademy"},{"id":58,"name":"coinbase"},{"id":55,"name":"envato"},{"id":0,"name":"everyone"},{"id":59,"name":"gaspedal"},{"id":49,"name":"mcneel"},{"id":2,"name":"moderators"},{"id":46,"name":"newrelic"},{"id":48,"name":"plugin_authors"},{"id":63,"name":"rails"},{"id":65,"name":"rgsoc2016"},{"id":52,"name":"sitepoint"},{"id":56,"name":"sketchup"},{"id":3,"name":"staff"},{"id":64,"name":"student-developer"},{"id":47,"name":"team"},{"id":60,"name":"tnation"},{"id":50,"name":"translators"},{"id":10,"name":"trust_level_0"},{"id":11,"name":"trust_level_1"},{"id":12,"name":"trust_level_2"},{"id":13,"name":"trust_level_3"},{"id":14,"name":"trust_level_4"},{"id":57,"name":"tudiabetes"},{"id":61,"name":"twitter"},{"id":44,"name":"ubuntu"},{"id":53,"name":"western_digital"}],"filters":["latest","unread","new","read","posted","bookmarks"],"periods":["all","yearly","quarterly","monthly","weekly","daily"],"top_menu_items":["latest","unread","new","read","posted","bookmarks","category","categories","top"],"anonymous_top_menu_items":["latest","top","categories","category","categories","top"],"uncategorized_category_id":17,"is_readonly":false,"disabled_plugins":[],"user_field_max_length":2048,"suppressed_from_homepage_category_ids":[],"post_action_types":[{"name_key":"bookmark","name":"Bookmark","description":"Bookmark this post","long_form":"bookmarked this post","is_flag":false,"icon":null,"id":1,"is_custom_flag":false},{"name_key":"like","name":"Like","description":"Like this post","long_form":"liked this","is_flag":false,"icon":"heart","id":2,"is_custom_flag":false},{"name_key":"off_topic","name":"Off-Topic","description":"This post is not relevant to the current discussion as defined by the title and first post, and should probably be moved elsewhere.","long_form":"flagged this as off-topic","is_flag":true,"icon":null,"id":3,"is_custom_flag":false},{"name_key":"inappropriate","name":"Inappropriate","description":"This post contains content that a reasonable person would consider offensive, abusive, or a violation of <a href=\"/guidelines\">our community guidelines<\/a>.","long_form":"flagged this as inappropriate","is_flag":true,"icon":null,"id":4,"is_custom_flag":false},{"name_key":"vote","name":"Vote","description":"Vote for this post","long_form":"voted for this post","is_flag":false,"icon":null,"id":5,"is_custom_flag":false},{"name_key":"spam","name":"Spam","description":"This post is an advertisement. It is not useful or relevant to the current topic, but promotional in nature.","long_form":"flagged this as spam","is_flag":true,"icon":null,"id":8,"is_custom_flag":false},{"name_key":"notify_user","name":"Send @{{username}} a message","description":"I want to talk to this person directly and privately about their post.","long_form":"messaged user","is_flag":true,"icon":null,"id":6,"is_custom_flag":true},{"name_key":"notify_moderators","name":"Something Else","description":"This post requires staff attention for another reason not listed above.","long_form":"flagged this for staff attention","is_flag":true,"icon":null,"id":7,"is_custom_flag":true}],"topic_flag_types":[{"name_key":"inappropriate","name":"Inappropriate","description":"This topic contains content that a reasonable person would consider offensive, abusive, or a violation of <a href=\"/guidelines\">our community guidelines<\/a>.","long_form":"flagged this as inappropriate","is_flag":true,"icon":null,"id":4,"is_custom_flag":false},{"name_key":"spam","name":"Spam","description":"This topic is an advertisement. It is not useful or relevant to this site, but promotional in nature.","long_form":"flagged this as spam","is_flag":true,"icon":null,"id":8,"is_custom_flag":false},{"name_key":"notify_moderators","name":"Something Else","description":"This topic requires general staff attention based on the <a href=\"/guidelines\">guidelines<\/a>, <a href=\"/tos\">TOS<\/a>, or for another reason not listed above.","long_form":"flagged this for moderator attention","is_flag":true,"icon":null,"id":7,"is_custom_flag":true}],"can_create_tag":false,"can_tag_topics":false,"tags_filter_regexp":"[<\\\\/\\>\\#\\?\\&\\s]","categories":[{"id":3,"name":"meta","color":"aaa","text_color":"FFFFFF","slug":"meta","topic_count":179,"post_count":1852,"position":1,"description":"Discussion about meta.discourse.org itself, the organization of this forum about Discourse, how it works, and how we can improve this site.","description_text":"Discussion about meta.discourse.org itself, the organization of this forum about Discourse, how it works, and how we can improve this site.","topic_url":"/t/category-definition-for-meta/24","logo_url":"","background_url":"","read_restricted":false,"permission":1,"notification_level":1,"topic_template":null,"has_children":false},{"id":26,"name":"spec","color":"33B0B0","text_color":"FFFFFF","slug":"spec","topic_count":38,"post_count":765,"position":2,"description":"My idea here is to have mini specs for features we would like built but have no bandwidth to build","description_text":"My idea here is to have mini specs for features we would like built but have no bandwidth to build","topic_url":"/t/about-the-spec-category/13965","logo_url":"","background_url":"","read_restricted":false,"permission":null,"parent_category_id":2,"notification_level":1,"topic_template":null,"has_children":false},{"id":9,"name":"ux","color":"5F497A","text_color":"FFFFFF","slug":"ux","topic_count":898,"post_count":10093,"position":25,"description":"Discussion about the user interface of Discourse, how features are presented to the user in the client, including language and UI elements.","description_text":"Discussion about the user interface of Discourse, how features are presented to the user in the client, including language and UI elements.","topic_url":"/t/category-definition-for-ux/2628","logo_url":null,"background_url":null,"read_restricted":false,"permission":1,"notification_level":1,"topic_template":null,"has_children":false},{"id":13,"name":"blog","color":"ED207B","text_color":"FFFFFF","slug":"blog","topic_count":49,"post_count":659,"position":25,"description":"Discussion topics generated from the official Discourse Blog. These topics are linked from the bottom of each blog entry where the blog comments would normally be.","description_text":"Discussion topics generated from the official Discourse Blog. These topics are linked from the bottom of each blog entry where the blog comments would normally be.","topic_url":"/t/category-definition-for-blog/5250","logo_url":null,"background_url":null,"read_restricted":false,"permission":null,"notification_level":1,"topic_template":null,"has_children":false},{"id":22,"name":"plugin","color":"F7941D","text_color":"FFFFFF","slug":"plugin","topic_count":109,"post_count":3254,"position":25,"description":"Plugin directory. To post here, message a Staff member and ask for access. One post per plugin please.","description_text":"Plugin directory. To post here, message a Staff member and ask for access. One post per plugin please.","topic_url":"/t/about-the-plugin-category/12648","logo_url":"","background_url":"","read_restricted":false,"permission":null,"notification_level":1,"topic_template":"","has_children":true},{"id":8,"name":"hosting","color":"74CCED","text_color":"FFFFFF","slug":"hosting","topic_count":153,"post_count":1324,"position":25,"description":"Topics about hosting Discourse, either on your own servers, in the cloud, or with specific hosting services.","description_text":"Topics about hosting Discourse, either on your own servers, in the cloud, or with specific hosting services.","topic_url":"/t/category-definition-for-hosting/2626","logo_url":null,"background_url":null,"read_restricted":false,"permission":1,"notification_level":1,"topic_template":null,"has_children":false},{"id":21,"name":"wordpress","color":"F9CFCF","text_color":"FFFFFF","slug":"wordpress","topic_count":112,"post_count":714,"position":25,"description":"Support for the official Discourse WordPress plugin at <a href=\"https://github.com/discourse/wp-discourse\">https://github.com/discourse/wp-discourse<\/a>","description_text":"Support for the official Discourse WordPress plugin at https://github.com/discourse/wp-discourse","topic_url":"/t/category-definition-for-wordpress/12282","logo_url":"","background_url":"","read_restricted":false,"permission":1,"parent_category_id":6,"notification_level":1,"topic_template":null,"has_children":false},{"id":14,"name":"marketplace","color":"8C6238","text_color":"FFFFFF","slug":"marketplace","topic_count":188,"post_count":1081,"position":25,"description":"About commercial Discourse related stuff: jobs or paid gigs, plugins, themes, hosting, etc.","description_text":"About commercial Discourse related stuff: jobs or paid gigs, plugins, themes, hosting, etc.","topic_url":"/t/category-definition-for-marketplace/5425","logo_url":"","background_url":"","read_restricted":false,"permission":1,"notification_level":1,"topic_template":"What would you like done?\n\nWhen do you need it done?\n\nWhat is your budget, in $ USD that you can offer for this task?","has_children":false},{"id":24,"name":"sso","color":"d47711","text_color":"FFFFFF","slug":"sso","topic_count":142,"post_count":1112,"position":25,"description":"For queries specifically about SSO (single sign on) and and login using third party providers (Google, Facebook, GitHub etc). See the <a href=\"https://meta.discourse.org/t/official-single-sign-on-for-discourse/13045\">official documentation on Discourse's SSO support<\/a>.","description_text":"For queries specifically about SSO (single sign on) and and login using third party providers (Google, Facebook, GitHub etc). See the official documentation on Discourse's SSO support.","topic_url":"/t/about-the-sso-category/13110","logo_url":"","background_url":"","read_restricted":false,"permission":1,"parent_category_id":7,"notification_level":1,"topic_template":"","has_children":false},{"id":27,"name":"translations","color":"808281","text_color":"FFFFFF","slug":"translations","topic_count":210,"post_count":1673,"position":25,"description":"This category is for discussion about localizing Discourse.","description_text":"This category is for discussion about localizing Discourse.","topic_url":"/t/about-the-translations-category/14549","logo_url":null,"background_url":null,"read_restricted":false,"permission":1,"parent_category_id":7,"notification_level":1,"topic_template":null,"has_children":false},{"id":17,"name":"uncategorized","color":"AB9364","text_color":"FFFFFF","slug":"uncategorized","topic_count":572,"post_count":5311,"position":25,"description":"Topics that don't need a category, or don't fit into any other existing category.","description_text":"","topic_url":"/t//","logo_url":"","background_url":"","read_restricted":false,"permission":1,"notification_level":1,"topic_template":null,"has_children":false},{"id":7,"name":"dev","color":"222","text_color":"000000","slug":"dev","topic_count":1047,"post_count":8228,"position":25,"description":"This category is for topics related to hacking on Discourse: submitting pull requests, configuring development environments, coding conventions, and so forth.","description_text":"This category is for topics related to hacking on Discourse: submitting pull requests, configuring development environments, coding conventions, and so forth.","topic_url":"/t/category-definition-for-dev/1026","logo_url":"","background_url":"","read_restricted":false,"permission":1,"notification_level":1,"topic_template":"","has_children":true},{"id":6,"name":"support","color":"CEA9A9","text_color":"FFFFFF","slug":"support","topic_count":4512,"post_count":31688,"position":25,"description":"Support on configuring and using Discourse after it is up and running. For installation questions, use the install category.","description_text":"Support on configuring and using Discourse after it is up and running. For installation questions, use the install category.","topic_url":"/t/category-definition-for-support/389","logo_url":"","background_url":"","read_restricted":false,"permission":1,"notification_level":1,"topic_template":null,"has_children":true},{"id":10,"name":"howto","color":"76923C","text_color":"FFFFFF","slug":"howto","topic_count":138,"post_count":2735,"position":25,"description":"Tutorial topics that describe how to set up, configure, or install Discourse using a specific platform or environment. Topics in this category may only be created by trust level 2 and up. ","description_text":"Tutorial topics that describe how to set up, configure, or install Discourse using a specific platform or environment. Topics in this category may only be created by trust level 2 and up. ","topic_url":"/t/category-definition-for-howto/2629","logo_url":null,"background_url":null,"read_restricted":false,"permission":1,"notification_level":1,"topic_template":null,"has_children":true},{"id":1,"name":"bug","color":"e9dd00","text_color":"000000","slug":"bug","topic_count":2709,"post_count":18356,"position":25,"description":"A bug report means something is broken, preventing normal/typical use of Discourse. Do be sure to search prior to submitting bugs. Include repro steps, and only describe one bug per topic please.","description_text":"A bug report means something is broken, preventing normal/typical use of Discourse. Do be sure to search prior to submitting bugs. Include repro steps, and only describe one bug per topic please.","topic_url":"/t/category-definition-for-bug/2","logo_url":null,"background_url":null,"read_restricted":false,"permission":1,"notification_level":1,"topic_template":null,"has_children":false},{"id":4,"name":"faq","color":"33b","text_color":"FFFFFF","slug":"faq","topic_count":40,"post_count":440,"position":25,"description":"Topics that come up very often when discussing Discourse will eventually be classified into this Frequently Asked Questions category. Should only be added to popular topics.","description_text":"Topics that come up very often when discussing Discourse will eventually be classified into this Frequently Asked Questions category. Should only be added to popular topics.","topic_url":"/t/category-definition-for-faq/25","logo_url":null,"background_url":null,"read_restricted":false,"permission":1,"notification_level":1,"topic_template":null,"has_children":false},{"id":5,"name":"extras","color":"25AAE2","text_color":"FFFFFF","slug":"extras","topic_count":11,"post_count":163,"position":25,"description":"A directory of all extensions &amp; integrations for Discourse which are <em>not<\/em> Discourse plugins, i.e. a CMS plugin, a browser extension or a native application.","description_text":"A directory of all extensions & integrations for Discourse which are not Discourse plugins, i.e. a CMS plugin, a browser extension or a native application.","topic_url":"/t/about-the-extras-category/28","logo_url":"","background_url":"","read_restricted":false,"permission":1,"parent_category_id":22,"notification_level":1,"topic_template":"","has_children":false},{"id":2,"name":"feature","color":"0E76BD","text_color":"FFFFFF","slug":"feature","topic_count":2578,"post_count":25911,"position":25,"description":"Discussion about features or plugins of Discourse.","description_text":"Discussion about features or plugins of Discourse.","topic_url":"/t/category-definition-for-feature/11","logo_url":null,"background_url":null,"read_restricted":false,"permission":1,"notification_level":1,"topic_template":null,"has_children":true},{"id":30,"name":"releases","color":"BF1E2E","text_color":"FFFFFF","slug":"releases","topic_count":9,"post_count":34,"position":26,"description":"Topics defining each official release of Discourse, including possible future releases.","description_text":"Topics defining each official release of Discourse, including possible future releases.","topic_url":"/t/about-the-releases-category/20857","logo_url":"","background_url":"","read_restricted":false,"permission":null,"notification_level":1,"topic_template":null,"has_children":false},{"id":31,"name":"installation","color":"997E7E","text_color":"FFFFFF","slug":"installation","topic_count":322,"post_count":2246,"position":27,"description":"Topics about getting Discourse up and running for the first time, and anything you need for installation.","description_text":"Topics about getting Discourse up and running for the first time, and anything you need for installation.","topic_url":"/t/about-the-installation-category/21019","logo_url":"","background_url":"","read_restricted":false,"permission":1,"notification_level":1,"topic_template":null,"has_children":false},{"id":32,"name":"RFC","color":"33B0B0","text_color":"FFFFFF","slug":"rfc","topic_count":14,"post_count":171,"position":28,"description":"Request for Comments. ","description_text":"Request for Comments. ","topic_url":"/t/about-the-rfc-category/21898","logo_url":"","background_url":"","read_restricted":false,"permission":1,"parent_category_id":2,"notification_level":1,"topic_template":null,"has_children":false},{"id":34,"name":"broken-plugin","color":"FF0000","text_color":"FFFFFF","slug":"broken-plugin","topic_count":16,"post_count":280,"position":30,"description":"Unmaintained and/or broken plugins","description_text":"Unmaintained and/or broken plugins","topic_url":"/t/about-the-broken-plugin-category/30009","logo_url":"","background_url":"","read_restricted":false,"permission":1,"parent_category_id":22,"notification_level":1,"topic_template":"","has_children":false},{"id":35,"name":"praise","color":"9EB83B","text_color":"FFFFFF","slug":"praise","topic_count":75,"post_count":330,"position":31,"description":"Got something nice to say about Discourse?","description_text":"Got something nice to say about Discourse?","topic_url":"/t/about-the-praise-category/30010","logo_url":"","background_url":"","read_restricted":false,"permission":1,"notification_level":1,"topic_template":null,"has_children":false},{"id":45,"name":"tips & tricks","color":"74CCED","text_color":"FFFFFF","slug":"tips-and-tricks","topic_count":35,"post_count":379,"position":40,"description":"The place to share your CSS tweaks, JavaScript hacks and colour schemes. Any small or large customisation of Discourse that's best shared as an informal how-to. Unlike the rest of the Howto category, this sub-forum does not require Trust Level 2, so post at will!","description_text":"The place to share your CSS tweaks, JavaScript hacks and colour schemes. Any small or large customisation of Discourse that's best shared as an informal how-to. Unlike the rest of the Howto category, this sub-forum does not require Trust Level 2, so post at will!","topic_url":"/t/about-the-tips-tricks-category/37387","logo_url":null,"background_url":null,"read_restricted":false,"permission":1,"parent_category_id":10,"notification_level":1,"topic_template":null,"has_children":false}],"trust_levels":[{"id":0,"name":"new user"},{"id":1,"name":"basic user"},{"id":2,"name":"member"},{"id":3,"name":"regular"},{"id":4,"name":"leader"}],"archetypes":[{"id":"regular","name":"Regular Topic","options":[]},{"id":"banner","name":"Banner Topic","options":[]}],"user_fields":[]});
+          ps.store("siteSettings", {"title":"Discourse Meta","contact_email":"team@discourse.org","contact_url":"","logo_url":"https://discourse-meta.s3-us-west-1.amazonaws.com/optimized/3X/9/d/9d543e92b15b06924249654667a81441a55867eb_1_690x184.png","logo_small_url":"https://meta-s3-cdn.global.ssl.fastly.net/original/3X/c/b/cb4bec8901221d4a646e45e1fa03db3a65e17f59.png","mobile_logo_url":"","favicon_url":"https://discourse-meta.s3-us-west-1.amazonaws.com/original/3X/c/b/cb4bec8901221d4a646e45e1fa03db3a65e17f59.png","allow_user_locale":true,"suggested_topics":7,"track_external_right_clicks":false,"ga_universal_tracking_code":"","ga_universal_domain_name":"auto","ga_tracking_code":"UA-33736483-2","ga_domain_name":"","gtm_container_id":"","top_menu":"latest|new|unread|categories|top","post_menu":"like-count|like|solved|share|flag|edit|bookmark|wiki|delete|admin|reply","post_menu_hidden_items":"bookmark|edit|wiki|delete|admin|flag","share_links":"twitter|facebook|email","category_colors":"BF1E2E|F1592A|F7941D|9EB83B|3AB54A|12A89D|25AAE2|0E76BD|652D90|92278F|ED207B|8C6238|231F20|808281|B3B5B4|283890","category_style":"bullet","enable_mobile_theme":true,"relative_date_duration":30,"category_featured_topics":4,"fixed_category_positions":false,"fixed_category_positions_on_create":false,"show_subcategory_list":false,"enable_badges":true,"enable_badge_sql":false,"enable_whispers":true,"invite_only":false,"login_required":false,"must_approve_users":false,"enable_local_logins":true,"allow_new_registrations":true,"enable_signup_cta":true,"enable_google_oauth2_logins":true,"enable_yahoo_logins":true,"enable_twitter_logins":true,"enable_instagram_logins":false,"enable_facebook_logins":true,"enable_github_logins":true,"enable_sso":false,"sso_overrides_avatar":false,"min_username_length":3,"max_username_length":20,"min_password_length":10,"min_admin_password_length":15,"logout_redirect":"","full_name_required":false,"enable_names":true,"invites_per_page":40,"delete_user_max_post_age":60,"delete_all_posts_max":15,"show_email_on_profile":false,"prioritize_username_in_ux":false,"enable_user_directory":true,"allow_anonymous_posting":true,"anonymous_posting_min_trust_level":4,"hide_user_profiles_from_public":false,"min_post_length":20,"min_first_post_length":20,"min_private_message_post_length":10,"max_post_length":40000,"min_topic_title_length":15,"max_topic_title_length":255,"min_private_message_title_length":2,"allow_uncategorized_topics":true,"min_title_similar_length":10,"min_body_similar_length":15,"enable_private_messages":true,"edit_history_visible_to_public":true,"delete_removed_posts_after":24,"traditional_markdown_linebreaks":false,"allow_html_tables":true,"suppress_reply_directly_below":true,"suppress_reply_directly_above":true,"max_reply_history":1,"newuser_max_images":1,"newuser_max_attachments":0,"show_pinned_excerpt_mobile":true,"show_pinned_excerpt_desktop":true,"display_name_on_posts":true,"show_time_gap_days":7,"short_progress_text_threshold":10000,"default_code_lang":"auto","autohighlight_all_code":false,"highlighted_languages":"apache|bash|cs|cpp|css|coffeescript|diff|xml|http|ini|json|java|javascript|makefile|markdown|nginx|objectivec|ruby|perl|php|python|sql|handlebars|scss","censored_words":"pagophagia","enable_emoji":true,"emoji_set":"twitter","code_formatting_style":"4-spaces-indent","email_time_window_mins":10,"disable_digest_emails":false,"email_in":true,"disable_emails":false,"bounce_score_threshold":4,"max_image_size_kb":3072,"max_attachment_size_kb":3072,"authorized_extensions":"jpg|jpeg|png|gif|svg|txt|ico|yml|csv|mp3|json|docx|htm|html|pdf|mp4|xlsx","max_image_width":690,"max_image_height":500,"prevent_anons_from_downloading_files":false,"enable_s3_uploads":true,"allow_profile_backgrounds":true,"allow_uploaded_avatars":true,"allow_animated_avatars":false,"default_avatars":"","external_system_avatars_enabled":true,"external_system_avatars_url":"https://avatars.discourse.org/v3/letter/{first_letter}/{color}/{size}.png","tl1_requires_read_posts":30,"tl3_links_no_follow":false,"use_admin_ip_whitelist":false,"alert_admins_if_errors_per_minute":100,"alert_admins_if_errors_per_hour":500,"enable_long_polling":true,"long_polling_base_url":"/","background_polling_interval":60000,"polling_interval":3000,"anon_polling_interval":15000,"flush_timings_secs":20,"verbose_localization":false,"max_new_topics":500,"tos_url":"","privacy_policy_url":"","faq_url":"","maximum_backups":5,"version_checks":true,"suppress_uncategorized_badge":true,"min_search_term_length":3,"topic_views_heat_low":1000,"topic_views_heat_medium":2000,"topic_views_heat_high":5000,"topic_post_like_heat_low":0.5,"topic_post_like_heat_medium":1.0,"topic_post_like_heat_high":2.0,"history_hours_low":12,"history_hours_medium":24,"history_hours_high":48,"cold_age_days_low":14,"cold_age_days_medium":90,"cold_age_days_high":180,"global_notice":"","show_create_topics_notice":true,"bootstrap_mode_min_users":50,"bootstrap_mode_enabled":false,"automatically_unpin_topics":true,"read_time_word_count":500,"disable_mailing_list_mode":false,"default_topics_automatic_unpin":true,"tagging_enabled":true,"tag_style":"simple","max_tags_per_topic":5,"max_tag_length":20,"min_trust_level_to_tag_topics":3,"max_tag_search_results":5,"show_filter_by_tag":false,"tags_sort_alphabetically":false,"staff_tags":"priority-high|priority-low|planned|feedback","suppress_overlapping_tags_in_list":true,"push_notifications_enabled":true,"gcm_sender_id":"520710445192","gcm_api_key":"AIzaSyCJa_VSS08Ihp4HAEZU7MIrv8uhICx3e3M","staff_notes_enabled":true,"spoiler_enabled":true,"details_enabled":true,"poll_enabled":true,"poll_maximum_options":30,"allow_solved_on_all_topics":false,"accept_all_solutions_trust_level":4,"adsense_publisher_code":"","adsense_through_trust_level":2,"adsense_topic_list_top_code":"","adsense_mobile_topic_list_top_code":"","adsense_topic_list_top_ad_sizes":"728*90 - leaderboard","adsense_topic_above_post_stream_code":"","adsense_mobile_topic_above_post_stream_code":"","adsense_topic_above_post_stream_ad_sizes":"728*90 - leaderboard","adsense_topic_above_suggested_code":"","adsense_mobile_topic_above_suggested_code":"","adsense_topic_above_suggested_ad_sizes":"728*90 - leaderboard","adsense_post_bottom_code":"","adsense_mobile_post_bottom_code":"","adsense_post_bottom_ad_sizes":"728*90 - leaderboard","adsense_nth_post_code":"","dfp_publisher_id":"","dfp_through_trust_level":2,"dfp_topic_list_top_code":"","dfp_topic_list_top_ad_sizes":"728*90 - leaderboard","dfp_mobile_topic_list_top_code":"","dfp_mobile_topic_list_top_ad_sizes":"320*50 - mobile leaderboard","dfp_target_topic_list_top_key_code":"","dfp_target_topic_list_top_value_code":"","dfp_topic_above_post_stream_code":"","dfp_topic_above_post_stream_ad_sizes":"728*90 - leaderboard","dfp_mobile_topic_above_post_stream_code":"","dfp_mobile_topic_above_post_stream_ad_sizes":"320*50 - mobile leaderboard","dfp_target_topic_above_post_stream_key_code":"","dfp_target_topic_above_post_stream_value_code":"","dfp_topic_above_suggested_code":"","dfp_topic_above_suggested_ad_sizes":"728*90 - leaderboard","dfp_mobile_topic_above_suggested_code":"","dfp_mobile_topic_above_suggested_ad_sizes":"320*50 - mobile leaderboard","dfp_target_topic_above_suggested_key_code":"","dfp_target_topic_above_suggested_value_code":"","dfp_nth_post_code":"","dfp_post_bottom_code":"","dfp_post_bottom_ad_sizes":"728*90 - leaderboard","dfp_mobile_post_bottom_code":"","dfp_mobile_post_bottom_ad_sizes":"320*50 - mobile leaderboard","dfp_target_post_bottom_key_code":"","dfp_target_post_bottom_value_code":"","amazon_through_trust_level":2,"amazon_topic_list_top_src_code":"","amazon_topic_list_top_ad_width_code":"","amazon_topic_list_top_ad_height_code":"","amazon_mobile_topic_list_top_src_code":"","amazon_mobile_topic_list_top_ad_width_code":"","amazon_mobile_topic_list_top_ad_height_code":"","amazon_topic_above_post_stream_src_code":"","amazon_topic_above_post_stream_ad_width_code":"","amazon_topic_above_post_stream_ad_height_code":"","amazon_mobile_topic_above_post_stream_src_code":"","amazon_mobile_topic_above_post_stream_ad_width_code":"","amazon_mobile_topic_above_post_stream_ad_height_code":"","amazon_topic_above_suggested_src_code":"","amazon_topic_above_suggested_ad_width_code":"","amazon_topic_above_suggested_ad_height_code":"","amazon_mobile_topic_above_suggested_src_code":"","amazon_mobile_topic_above_suggested_ad_width_code":"","amazon_mobile_topic_above_suggested_ad_height_code":"","amazon_post_bottom_src_code":"","amazon_nth_post_code":"","amazon_post_bottom_ad_width_code":"","amazon_post_bottom_ad_height_code":"","amazon_mobile_post_bottom_src_code":"","amazon_mobile_post_bottom_ad_width_code":"","amazon_mobile_post_bottom_ad_height_code":"","show_version_check":true,"available_locales":"ar|bs_BA|cs|da|de|en|es|et|fa_IR|fi|fr|gl|he|id|it|ja|ko|nb_NO|nl|pl_PL|pt|pt_BR|ro|ru|sk|sq|sv|te|tr_TR|uk|vi|zh_CN|zh_TW"});
+          ps.store("customHTML", {"top":"\n","footer":"\n"});
+          ps.store("banner", {});
+          ps.store("customEmoji", [{"name":"allthethings","url":"/uploads/default/_emoji/allthethings.png"},{"name":"areyoukiddingme","url":"/uploads/default/_emoji/areyoukiddingme.png"},{"name":"awthanks","url":"/uploads/default/_emoji/awthanks.png"},{"name":"badpokerface","url":"/uploads/default/_emoji/badpokerface.png"},{"name":"challengeaccepted","url":"/uploads/default/_emoji/challengeaccepted.png"},{"name":"content","url":"/uploads/default/_emoji/content.png"},{"name":"dealwithit","url":"/uploads/default/_emoji/dealwithit.gif"},{"name":"derp","url":"/uploads/default/_emoji/derp.png"},{"name":"disapproval","url":"/uploads/default/_emoji/disapproval.png"},{"name":"discourse","url":"/uploads/default/_emoji/discourse.png"},{"name":"dosequis","url":"/uploads/default/_emoji/dosequis.png"},{"name":"drevil","url":"/uploads/default/_emoji/drevil.png"},{"name":"facepalm","url":"/uploads/default/_emoji/facepalm.png"},{"name":"firstworldproblem","url":"/uploads/default/_emoji/firstworldproblem.png"},{"name":"fonzie","url":"/uploads/default/_emoji/fonzie.png"},{"name":"garbage","url":"/uploads/default/_emoji/garbage.png"},{"name":"gates","url":"/uploads/default/_emoji/gates.png"},{"name":"goodnews","url":"/uploads/default/_emoji/goodnews.png"},{"name":"grumpycat","url":"/uploads/default/_emoji/grumpycat.png"},{"name":"hipster","url":"/uploads/default/_emoji/hipster.png"},{"name":"jobs","url":"/uploads/default/_emoji/jobs.png"},{"name":"liquorice","url":"/uploads/default/_emoji/liquorice.png"},{"name":"lol","url":"/uploads/default/_emoji/lol.png"},{"name":"mdr","url":"/uploads/default/_emoji/mdr.gif"},{"name":"notsureif","url":"/uploads/default/_emoji/notsureif.png"},{"name":"okay","url":"/uploads/default/_emoji/okay.png"},{"name":"orly","url":"/uploads/default/_emoji/orly.png"},{"name":"philosoraptor","url":"/uploads/default/_emoji/philosoraptor.png"},{"name":"pokerface","url":"/uploads/default/_emoji/pokerface.png"},{"name":"rageguy","url":"/uploads/default/_emoji/rageguy.png"},{"name":"sadpanda","url":"/uploads/default/_emoji/sadpanda.png"},{"name":"success","url":"/uploads/default/_emoji/success.png"},{"name":"troll","url":"/uploads/default/_emoji/troll.png"},{"name":"unicorn","url":"/uploads/default/_emoji/unicorn.png"},{"name":"wat","url":"/uploads/default/_emoji/wat.png"},{"name":"yey","url":"/uploads/default/_emoji/yey.png"},{"name":"yuno","url":"/uploads/default/_emoji/yuno.png"},{"name":"zogstrip","url":"/uploads/default/_emoji/zogstrip.png"}]);
+          ps.store("translationOverrides", {});
+          ps.store("currentUser", {"id":19407,"username":"metakermit","avatar_template":"/user_avatar/meta.discourse.org/metakermit/{size}/50981_1.png","name":"Dražen Lučanin","total_unread_notifications":7,"unread_notifications":1,"unread_private_messages":0,"admin":false,"notification_channel_position":null,"moderator":false,"staff":false,"title":null,"reply_count":5,"topic_count":1,"enable_quoting":true,"external_links_in_new_tab":false,"dynamic_favicon":false,"trust_level":2,"can_edit":true,"can_invite_to_forum":true,"should_be_redirected_to_top":false,"disable_jump_reply":false,"custom_fields":{},"muted_category_ids":[],"dismissed_banner_key":null,"is_anonymous":false,"read_faq":false,"automatically_unpin_topics":true,"mailing_list_mode":false,"akismet_review_count":null});
+          ps.store("topicTrackingStates", [{"topic_id":48340,"highest_post_number":1,"last_read_post_number":null,"created_at":"2016-08-08T00:57:10.577Z","category_id":1,"notification_level":null},{"topic_id":48299,"highest_post_number":4,"last_read_post_number":null,"created_at":"2016-08-06T17:02:13.440Z","category_id":2,"notification_level":null},{"topic_id":48326,"highest_post_number":5,"last_read_post_number":null,"created_at":"2016-08-07T16:41:01.711Z","category_id":6,"notification_level":null},{"topic_id":48294,"highest_post_number":5,"last_read_post_number":null,"created_at":"2016-08-06T13:42:25.334Z","category_id":31,"notification_level":null},{"topic_id":48315,"highest_post_number":6,"last_read_post_number":null,"created_at":"2016-08-07T08:57:07.631Z","category_id":6,"notification_level":null},{"topic_id":48317,"highest_post_number":13,"last_read_post_number":null,"created_at":"2016-08-07T09:19:07.415Z","category_id":17,"notification_level":null},{"topic_id":48312,"highest_post_number":7,"last_read_post_number":null,"created_at":"2016-08-07T07:27:12.401Z","category_id":14,"notification_level":null},{"topic_id":48347,"highest_post_number":3,"last_read_post_number":null,"created_at":"2016-08-08T09:08:48.821Z","category_id":2,"notification_level":null},{"topic_id":48302,"highest_post_number":3,"last_read_post_number":null,"created_at":"2016-08-06T23:27:31.839Z","category_id":1,"notification_level":null},{"topic_id":48296,"highest_post_number":9,"last_read_post_number":null,"created_at":"2016-08-06T14:44:35.017Z","category_id":22,"notification_level":null},{"topic_id":48327,"highest_post_number":3,"last_read_post_number":null,"created_at":"2016-08-07T17:38:43.479Z","category_id":6,"notification_level":null},{"topic_id":48351,"highest_post_number":1,"last_read_post_number":null,"created_at":"2016-08-08T10:48:08.922Z","category_id":17,"notification_level":null},{"topic_id":48292,"highest_post_number":1,"last_read_post_number":null,"created_at":"2016-08-06T12:18:39.651Z","category_id":7,"notification_level":null},{"topic_id":48293,"highest_post_number":6,"last_read_post_number":null,"created_at":"2016-08-06T13:34:12.812Z","category_id":22,"notification_level":null},{"topic_id":48303,"highest_post_number":4,"last_read_post_number":null,"created_at":"2016-08-07T01:11:37.489Z","category_id":2,"notification_level":null},{"topic_id":48324,"highest_post_number":1,"last_read_post_number":null,"created_at":"2016-08-07T16:29:42.955Z","category_id":27,"notification_level":null},{"topic_id":48319,"highest_post_number":4,"last_read_post_number":null,"created_at":"2016-08-07T10:43:27.986Z","category_id":6,"notification_level":null},{"topic_id":48308,"highest_post_number":5,"last_read_post_number":null,"created_at":"2016-08-07T05:32:53.150Z","category_id":6,"notification_level":null},{"topic_id":48307,"highest_post_number":2,"last_read_post_number":null,"created_at":"2016-08-07T03:35:42.929Z","category_id":6,"notification_level":null},{"topic_id":48352,"highest_post_number":1,"last_read_post_number":null,"created_at":"2016-08-08T10:51:02.058Z","category_id":32,"notification_level":null},{"topic_id":3102,"highest_post_number":325,"last_read_post_number":323,"created_at":"2013-02-14T19:30:38.400Z","category_id":3,"notification_level":2},{"topic_id":14003,"highest_post_number":61,"last_read_post_number":55,"created_at":"2014-03-22T07:04:46.816Z","category_id":10,"notification_level":2},{"topic_id":17247,"highest_post_number":106,"last_read_post_number":45,"created_at":"2014-07-05T20:36:15.900Z","category_id":10,"notification_level":2},{"topic_id":22308,"highest_post_number":93,"last_read_post_number":79,"created_at":"2014-11-19T13:18:56.033Z","category_id":2,"notification_level":2},{"topic_id":33224,"highest_post_number":27,"last_read_post_number":23,"created_at":"2015-09-14T14:53:06.767Z","category_id":2,"notification_level":2}]);
+          ps.store("topic_list_latest", {"users":[{"id":21626,"username":"itamerlanium","avatar_template":"/user_avatar/meta.discourse.org/itamerlanium/{size}/56833_1.png"},{"id":8722,"username":"Falco","avatar_template":"/user_avatar/meta.discourse.org/falco/{size}/18952_1.png"},{"id":6626,"username":"riking","avatar_template":"/user_avatar/meta.discourse.org/riking/{size}/47647_1.png"},{"id":13455,"username":"tgxworld","avatar_template":"/user_avatar/meta.discourse.org/tgxworld/{size}/48529_1.png"},{"id":8300,"username":"cpradio","avatar_template":"/user_avatar/meta.discourse.org/cpradio/{size}/4970_1.png"},{"id":18507,"username":"BlackSheep","avatar_template":"/user_avatar/meta.discourse.org/blacksheep/{size}/50170_1.png"},{"id":5559,"username":"downey","avatar_template":"/user_avatar/meta.discourse.org/downey/{size}/52083_1.png"},{"id":22084,"username":"psbrandt","avatar_template":"/user_avatar/meta.discourse.org/psbrandt/{size}/58232_1.png"},{"id":2989,"username":"meglio","avatar_template":"/user_avatar/meta.discourse.org/meglio/{size}/33480_1.png"},{"id":21471,"username":"Auriel","avatar_template":"/user_avatar/meta.discourse.org/auriel/{size}/60140_1.png"},{"id":22916,"username":"junaid_pk14","avatar_template":"https://avatars.discourse.org/v3/letter/j/f475e1/{size}.png"},{"id":10764,"username":"olea","avatar_template":"/user_avatar/meta.discourse.org/olea/{size}/32305_1.png"},{"id":5351,"username":"erlend_sh","avatar_template":"/user_avatar/meta.discourse.org/erlend_sh/{size}/43866_1.png"},{"id":32,"username":"codinghorror","avatar_template":"/user_avatar/meta.discourse.org/codinghorror/{size}/5297_1.png"},{"id":17969,"username":"Pad_Pors","avatar_template":"/user_avatar/meta.discourse.org/pad_pors/{size}/52016_1.png"},{"id":22579,"username":"Hammad_Abbasi","avatar_template":"https://avatars.discourse.org/v3/letter/h/90db22/{size}.png"},{"id":18645,"username":"arrowcircle","avatar_template":"/user_avatar/meta.discourse.org/arrowcircle/{size}/49619_1.png"},{"id":11134,"username":"sujato","avatar_template":"/user_avatar/meta.discourse.org/sujato/{size}/32930_1.png"},{"id":8617,"username":"Mittineague","avatar_template":"/user_avatar/meta.discourse.org/mittineague/{size}/40997_1.png"},{"id":2979,"username":"elijah","avatar_template":"/user_avatar/meta.discourse.org/elijah/{size}/10302_1.png"},{"id":16697,"username":"mpalmer","avatar_template":"/user_avatar/meta.discourse.org/mpalmer/{size}/45740_1.png"},{"id":2,"username":"neil","avatar_template":"/user_avatar/meta.discourse.org/neil/{size}/5245_1.png"},{"id":7476,"username":"TimeDoctor","avatar_template":"/user_avatar/meta.discourse.org/timedoctor/{size}/17393_1.png"},{"id":22500,"username":"Richard_Mohorovich","avatar_template":"/user_avatar/meta.discourse.org/richard_mohorovich/{size}/60092_1.png"},{"id":1,"username":"sam","avatar_template":"/user_avatar/meta.discourse.org/sam/{size}/5243_1.png"},{"id":19,"username":"eviltrout","avatar_template":"/user_avatar/meta.discourse.org/eviltrout/{size}/5275_1.png"},{"id":10365,"username":"brahn","avatar_template":"/user_avatar/meta.discourse.org/brahn/{size}/58952_1.png"},{"id":13378,"username":"angus","avatar_template":"/user_avatar/meta.discourse.org/angus/{size}/37643_1.png"},{"id":14750,"username":"Tom_Newsom","avatar_template":"/user_avatar/meta.discourse.org/tom_newsom/{size}/41231_1.png"},{"id":20318,"username":"Ankhamax","avatar_template":"/user_avatar/meta.discourse.org/ankhamax/{size}/52785_1.png"},{"id":8571,"username":"tobiaseigen","avatar_template":"/user_avatar/meta.discourse.org/tobiaseigen/{size}/42053_1.png"},{"id":21029,"username":"pmusaraj","avatar_template":"/user_avatar/meta.discourse.org/pmusaraj/{size}/55151_1.png"},{"id":8810,"username":"fantasticfears","avatar_template":"/user_avatar/meta.discourse.org/fantasticfears/{size}/51902_1.png"},{"id":13221,"username":"Huey_Le","avatar_template":"https://avatars.discourse.org/v3/letter/h/3ab097/{size}.png"},{"id":11731,"username":"lidel","avatar_template":"/user_avatar/meta.discourse.org/lidel/{size}/41293_1.png"},{"id":21707,"username":"claas","avatar_template":"https://avatars.discourse.org/v3/letter/c/919ad9/{size}.png"},{"id":4881,"username":"gerhard","avatar_template":"/user_avatar/meta.discourse.org/gerhard/{size}/51748_1.png"},{"id":7803,"username":"caffeine","avatar_template":"/user_avatar/meta.discourse.org/caffeine/{size}/17828_1.png"},{"id":9775,"username":"elberet","avatar_template":"/user_avatar/meta.discourse.org/elberet/{size}/40021_1.png"},{"id":16908,"username":"fbender","avatar_template":"/user_avatar/meta.discourse.org/fbender/{size}/46309_1.png"},{"id":14350,"username":"rewphus","avatar_template":"/user_avatar/meta.discourse.org/rewphus/{size}/40027_1.png"},{"id":12086,"username":"tkiblin","avatar_template":"/user_avatar/meta.discourse.org/tkiblin/{size}/49008_1.png"},{"id":21612,"username":"Idan","avatar_template":"https://avatars.discourse.org/v3/letter/i/91b2a8/{size}.png"},{"id":17235,"username":"sethm","avatar_template":"https://avatars.discourse.org/v3/letter/s/48db29/{size}.png"},{"id":8707,"username":"Sebastian","avatar_template":"/user_avatar/meta.discourse.org/sebastian/{size}/18929_1.png"},{"id":11455,"username":"Dan_G","avatar_template":"/user_avatar/meta.discourse.org/dan_g/{size}/33423_1.png"},{"id":23149,"username":"steemitforum","avatar_template":"https://avatars.discourse.org/v3/letter/s/f05b48/{size}.png"},{"id":13220,"username":"dlynch158","avatar_template":"https://avatars.discourse.org/v3/letter/d/ec9cab/{size}.png"},{"id":15209,"username":"pfaffman","avatar_template":"/user_avatar/meta.discourse.org/pfaffman/{size}/51024_1.png"},{"id":1995,"username":"zogstrip","avatar_template":"/user_avatar/meta.discourse.org/zogstrip/{size}/8630_1.png"},{"id":464,"username":"DeanMarkTaylor","avatar_template":"/user_avatar/meta.discourse.org/deanmarktaylor/{size}/6055_1.png"},{"id":11193,"username":"jamesmarkcook","avatar_template":"/user_avatar/meta.discourse.org/jamesmarkcook/{size}/59761_1.png"},{"id":6548,"username":"michaeld","avatar_template":"/user_avatar/meta.discourse.org/michaeld/{size}/1594_1.png"},{"id":15271,"username":"dmitry_fedyuk","avatar_template":"/user_avatar/meta.discourse.org/dmitry_fedyuk/{size}/42381_1.png"},{"id":15604,"username":"geoff777","avatar_template":"/user_avatar/meta.discourse.org/geoff777/{size}/43039_1.png"},{"id":15292,"username":"will_io","avatar_template":"/user_avatar/meta.discourse.org/will_io/{size}/49174_1.png"},{"id":14361,"username":"djcyry","avatar_template":"/user_avatar/meta.discourse.org/djcyry/{size}/51787_1.png"},{"id":18041,"username":"SafaAlfulaij","avatar_template":"/user_avatar/meta.discourse.org/safaalfulaij/{size}/48515_1.png"},{"id":18528,"username":"figlet","avatar_template":"/user_avatar/meta.discourse.org/figlet/{size}/51926_1.png"},{"id":23092,"username":"haikuos","avatar_template":"/user_avatar/meta.discourse.org/haikuos/{size}/60148_1.png"},{"id":3998,"username":"steko","avatar_template":"/user_avatar/meta.discourse.org/steko/{size}/47674_1.png"},{"id":18201,"username":"ccdw","avatar_template":"https://avatars.discourse.org/v3/letter/c/d9b06d/{size}.png"},{"id":15568,"username":"fefrei","avatar_template":"/user_avatar/meta.discourse.org/fefrei/{size}/42973_1.png"},{"id":1910,"username":"Oskar","avatar_template":"/user_avatar/meta.discourse.org/oskar/{size}/8488_1.png"},{"id":7366,"username":"rumpelsepp","avatar_template":"https://avatars.discourse.org/v3/letter/r/bc79bd/{size}.png"},{"id":17621,"username":"jomaxro","avatar_template":"/user_avatar/meta.discourse.org/jomaxro/{size}/47748_1.png"},{"id":21024,"username":"mrjn","avatar_template":"/user_avatar/meta.discourse.org/mrjn/{size}/55135_1.png"}],"topic_list":{"can_create_topic":true,"more_topics_url":"/latest?no_definitions=true&page=1","draft":null,"draft_key":"new_topic","draft_sequence":1,"per_page":30,"topics":[{"id":47710,"title":"Discourse has stopped opening","fancy_title":"Discourse has stopped opening","slug":"discourse-has-stopped-opening","posts_count":35,"reply_count":34,"highest_post_number":38,"image_url":null,"created_at":"2016-07-24T11:38:31.725Z","last_posted_at":"2016-08-08T11:09:44.366Z","bumped":true,"bumped_at":"2016-08-08T11:09:44.366Z","unseen":false,"pinned":false,"unpinned":null,"visible":true,"closed":false,"archived":false,"bookmarked":null,"liked":null,"views":500,"like_count":36,"has_summary":false,"archetype":"regular","last_poster_username":"cpradio","category_id":8,"pinned_globally":false,"tags":[],"has_accepted_answer":false,"posters":[{"extras":null,"description":"Original Poster","user_id":21626},{"extras":null,"description":"Frequent Poster","user_id":8722},{"extras":null,"description":"Frequent Poster","user_id":6626},{"extras":null,"description":"Frequent Poster","user_id":13455},{"extras":"latest","description":"Most Recent Poster","user_id":8300}]},{"id":38501,"title":"Abbreviations and acronyms plugin","fancy_title":"Abbreviations and acronyms plugin","slug":"abbreviations-and-acronyms-plugin","posts_count":23,"reply_count":13,"highest_post_number":24,"image_url":null,"created_at":"2016-01-26T10:47:03.030Z","last_posted_at":"2016-08-08T11:03:57.314Z","bumped":true,"bumped_at":"2016-08-08T11:03:57.314Z","unseen":false,"pinned":false,"unpinned":null,"visible":true,"closed":false,"archived":false,"bookmarked":null,"liked":null,"views":1502,"like_count":60,"has_summary":false,"archetype":"regular","last_poster_username":"cpradio","category_id":22,"pinned_globally":false,"tags":[],"has_accepted_answer":false,"posters":[{"extras":null,"description":"Original Poster","user_id":18507},{"extras":null,"description":"Frequent Poster","user_id":5559},{"extras":null,"description":"Frequent Poster","user_id":22084},{"extras":null,"description":"Frequent Poster","user_id":2989},{"extras":"latest","description":"Most Recent Poster","user_id":8300}]},{"id":48352,"title":"Ritzy RTE Alternate Editor Compatibility?","fancy_title":"Ritzy RTE Alternate Editor Compatibility?","slug":"ritzy-rte-alternate-editor-compatibility","posts_count":1,"reply_count":0,"highest_post_number":1,"image_url":null,"created_at":"2016-08-08T10:51:02.058Z","last_posted_at":"2016-08-08T10:51:02.143Z","bumped":true,"bumped_at":"2016-08-08T10:51:02.143Z","unseen":true,"pinned":false,"unpinned":null,"visible":true,"closed":false,"archived":false,"bookmarked":null,"liked":null,"views":10,"like_count":0,"has_summary":false,"archetype":"regular","last_poster_username":"Auriel","category_id":32,"pinned_globally":false,"tags":[],"has_accepted_answer":false,"posters":[{"extras":"latest single","description":"Original Poster, Most Recent Poster","user_id":21471}]},{"id":48351,"title":"SSO login & logout issues","fancy_title":"SSO login &amp; logout issues","slug":"sso-login-logout-issues","posts_count":1,"reply_count":0,"highest_post_number":1,"image_url":null,"created_at":"2016-08-08T10:48:08.922Z","last_posted_at":"2016-08-08T10:48:08.993Z","bumped":true,"bumped_at":"2016-08-08T10:48:08.993Z","unseen":true,"pinned":false,"unpinned":null,"visible":true,"closed":false,"archived":false,"bookmarked":null,"liked":null,"views":10,"like_count":0,"has_summary":false,"archetype":"regular","last_poster_username":"junaid_pk14","category_id":17,"pinned_globally":false,"tags":[],"has_accepted_answer":false,"posters":[{"extras":"latest single","description":"Original Poster, Most Recent Poster","user_id":22916}]},{"id":48248,"title":"Hootsuite doesn't like Discourse RSS","fancy_title":"Hootsuite doesn&rsquo;t like Discourse RSS","slug":"hootsuite-doesnt-like-discourse-rss","posts_count":5,"reply_count":0,"highest_post_number":5,"image_url":"//discourse-meta.s3-us-west-1.amazonaws.com/optimized/3X/0/e/0e0f667938878a2144c9f96f8c05b877d82bc244_1_328x500.png","created_at":"2016-08-05T10:48:11.676Z","last_posted_at":"2016-08-08T10:52:43.075Z","bumped":true,"bumped_at":"2016-08-08T10:09:33.169Z","unseen":false,"pinned":false,"unpinned":null,"visible":true,"closed":true,"archived":false,"bookmarked":null,"liked":null,"views":119,"like_count":10,"has_summary":false,"archetype":"regular","last_poster_username":"codinghorror","category_id":6,"pinned_globally":false,"tags":[],"has_accepted_answer":false,"posters":[{"extras":null,"description":"Original Poster","user_id":10764},{"extras":null,"description":"Frequent Poster","user_id":5351},{"extras":"latest","description":"Most Recent Poster, Frequent Poster","user_id":32}]},{"id":48347,"title":"Filling the profile setting in 3 segments -- request","fancy_title":"Filling the profile setting in 3 segments &ndash; request","slug":"filling-the-profile-setting-in-3-segments-request","posts_count":3,"reply_count":0,"highest_post_number":3,"image_url":null,"created_at":"2016-08-08T09:08:48.821Z","last_posted_at":"2016-08-08T09:31:42.986Z","bumped":true,"bumped_at":"2016-08-08T09:31:38.853Z","unseen":true,"pinned":false,"unpinned":null,"visible":true,"closed":true,"archived":false,"bookmarked":null,"liked":null,"views":23,"like_count":1,"has_summary":false,"archetype":"regular","last_poster_username":"erlend_sh","category_id":2,"pinned_globally":false,"tags":[],"has_accepted_answer":false,"posters":[{"extras":null,"description":"Original Poster","user_id":17969},{"extras":"latest","description":"Most Recent Poster","user_id":5351}]},{"id":48315,"title":"Issues in discourse's multi-site configuration","fancy_title":"Issues in discourse&rsquo;s multi-site configuration","slug":"issues-in-discourses-multi-site-configuration","posts_count":6,"reply_count":0,"highest_post_number":6,"image_url":null,"created_at":"2016-08-07T08:57:07.631Z","last_posted_at":"2016-08-08T08:30:02.790Z","bumped":true,"bumped_at":"2016-08-08T08:30:02.790Z","unseen":true,"pinned":false,"unpinned":null,"visible":true,"closed":false,"archived":false,"bookmarked":null,"liked":null,"views":84,"like_count":2,"has_summary":false,"archetype":"regular","last_poster_username":"Hammad_Abbasi","category_id":6,"pinned_globally":false,"tags":[],"has_accepted_answer":false,"posters":[{"extras":"latest","description":"Original Poster, Most Recent Poster","user_id":22579},{"extras":null,"description":"Frequent Poster","user_id":18645}]},{"id":48317,"title":"Discourse, gender, and online forums","fancy_title":"Discourse, gender, and online forums","slug":"discourse-gender-and-online-forums","posts_count":12,"reply_count":9,"highest_post_number":13,"image_url":null,"created_at":"2016-08-07T09:19:07.415Z","last_posted_at":"2016-08-08T07:03:16.059Z","bumped":true,"bumped_at":"2016-08-08T07:03:16.059Z","unseen":true,"pinned":false,"unpinned":null,"visible":true,"closed":false,"archived":false,"bookmarked":null,"liked":null,"views":221,"like_count":26,"has_summary":false,"archetype":"regular","last_poster_username":"codinghorror","category_id":17,"pinned_globally":false,"tags":[],"has_accepted_answer":false,"posters":[{"extras":null,"description":"Original Poster","user_id":11134},{"extras":null,"description":"Frequent Poster","user_id":8617},{"extras":null,"description":"Frequent Poster","user_id":2979},{"extras":null,"description":"Frequent Poster","user_id":16697},{"extras":"latest","description":"Most Recent Poster","user_id":32}]},{"id":48246,"title":"Discourse tagging pluging improvement","fancy_title":"Discourse tagging pluging improvement","slug":"discourse-tagging-pluging-improvement","posts_count":4,"reply_count":1,"highest_post_number":4,"image_url":null,"created_at":"2016-08-05T09:32:03.930Z","last_posted_at":"2016-08-08T05:49:24.641Z","bumped":true,"bumped_at":"2016-08-08T05:49:24.641Z","unseen":false,"pinned":false,"unpinned":null,"visible":true,"closed":false,"archived":false,"bookmarked":null,"liked":null,"views":125,"like_count":7,"has_summary":false,"archetype":"regular","last_poster_username":"junaid_pk14","category_id":6,"pinned_globally":false,"tags":[],"has_accepted_answer":false,"posters":[{"extras":"latest","description":"Original Poster, Most Recent Poster","user_id":22916},{"extras":null,"description":"Frequent Poster","user_id":32},{"extras":null,"description":"Frequent Poster","user_id":2}]},{"id":48308,"title":"System message: \"Problems have been found\"","fancy_title":"System message: &ldquo;Problems have been found&rdquo;","slug":"system-message-problems-have-been-found","posts_count":5,"reply_count":3,"highest_post_number":5,"image_url":"//discourse-meta.s3-us-west-1.amazonaws.com/optimized/3X/6/e/6ef17b7146f43c5813db6108930502b5c0e3a244_1_690x297.PNG","created_at":"2016-08-07T05:32:53.150Z","last_posted_at":"2016-08-08T05:11:53.101Z","bumped":true,"bumped_at":"2016-08-08T05:11:53.101Z","unseen":true,"pinned":false,"unpinned":null,"visible":true,"closed":false,"archived":false,"bookmarked":null,"liked":null,"views":113,"like_count":5,"has_summary":false,"archetype":"regular","last_poster_username":"tgxworld","category_id":6,"pinned_globally":false,"tags":[],"has_accepted_answer":false,"posters":[{"extras":null,"description":"Original Poster","user_id":7476},{"extras":null,"description":"Frequent Poster","user_id":8300},{"extras":null,"description":"Frequent Poster","user_id":32},{"extras":"latest","description":"Most Recent Poster","user_id":13455}]},{"id":48087,"title":"SSO for College Account","fancy_title":"SSO for College Account","slug":"sso-for-college-account","posts_count":7,"reply_count":5,"highest_post_number":7,"image_url":null,"created_at":"2016-08-01T23:05:35.037Z","last_posted_at":"2016-08-08T03:21:33.349Z","bumped":true,"bumped_at":"2016-08-08T03:21:33.349Z","unseen":false,"pinned":false,"unpinned":null,"visible":true,"closed":false,"archived":false,"bookmarked":null,"liked":null,"views":141,"like_count":7,"has_summary":false,"archetype":"regular","last_poster_username":"mpalmer","category_id":24,"pinned_globally":false,"tags":[],"has_accepted_answer":false,"posters":[{"extras":null,"description":"Original Poster","user_id":22500},{"extras":"latest","description":"Most Recent Poster","user_id":16697}]},{"id":33090,"title":"How to enable Piwik analytics on Discourse","fancy_title":"How to enable Piwik analytics on Discourse","slug":"how-to-enable-piwik-analytics-on-discourse","posts_count":18,"reply_count":10,"highest_post_number":18,"image_url":null,"created_at":"2015-09-10T10:18:13.560Z","last_posted_at":"2016-08-08T01:59:20.907Z","bumped":true,"bumped_at":"2016-08-08T01:59:20.907Z","unseen":false,"pinned":false,"unpinned":null,"visible":true,"closed":false,"archived":false,"bookmarked":null,"liked":null,"views":1199,"like_count":25,"has_summary":false,"archetype":"regular","last_poster_username":"brahn","category_id":10,"pinned_globally":false,"tags":[],"has_accepted_answer":false,"posters":[{"extras":null,"description":"Original Poster","user_id":5351},{"extras":null,"description":"Frequent Poster","user_id":6626},{"extras":null,"description":"Frequent Poster","user_id":1},{"extras":null,"description":"Frequent Poster","user_id":19},{"extras":"latest","description":"Most Recent Poster","user_id":10365}]},{"id":41630,"title":"Topic List Previews","fancy_title":"Topic List Previews","slug":"topic-list-previews","posts_count":326,"reply_count":201,"highest_post_number":331,"image_url":null,"created_at":"2016-03-27T20:22:55.398Z","last_posted_at":"2016-08-08T01:01:15.976Z","bumped":true,"bumped_at":"2016-08-08T01:01:15.976Z","unseen":false,"pinned":false,"unpinned":null,"visible":true,"closed":false,"archived":false,"bookmarked":null,"liked":null,"views":10100,"like_count":451,"has_summary":true,"archetype":"regular","last_poster_username":"pmusaraj","category_id":22,"pinned_globally":false,"tags":[],"has_accepted_answer":false,"posters":[{"extras":null,"description":"Original Poster","user_id":13378},{"extras":null,"description":"Frequent Poster","user_id":14750},{"extras":null,"description":"Frequent Poster","user_id":20318},{"extras":null,"description":"Frequent Poster","user_id":8571},{"extras":"latest","description":"Most Recent Poster","user_id":21029}]},{"id":48340,"title":"Select2 expand choices over composer in tagging group","fancy_title":"Select2 expand choices over composer in tagging group","slug":"select2-expand-choices-over-composer-in-tagging-group","posts_count":1,"reply_count":0,"highest_post_number":1,"image_url":"https://meta-s3-cdn.global.ssl.fastly.net/original/3X/7/e/7e53f38dc36c09309a24841cf2bd99ec9bcf6e1e.jpg","created_at":"2016-08-08T00:57:10.577Z","last_posted_at":"2016-08-08T00:57:10.660Z","bumped":true,"bumped_at":"2016-08-08T00:57:10.660Z","unseen":true,"pinned":false,"unpinned":null,"visible":true,"closed":false,"archived":false,"bookmarked":null,"liked":null,"views":44,"like_count":0,"has_summary":false,"archetype":"regular","last_poster_username":"fantasticfears","category_id":1,"pinned_globally":false,"tags":[],"has_accepted_answer":false,"posters":[{"extras":"latest single","description":"Original Poster, Most Recent Poster","user_id":8810}]},{"id":25185,"title":"How to anonymize your links in Discourse?","fancy_title":"How to anonymize your links in Discourse?","slug":"how-to-anonymize-your-links-in-discourse","posts_count":26,"reply_count":22,"highest_post_number":26,"image_url":null,"created_at":"2015-02-12T23:39:25.179Z","last_posted_at":"2016-08-07T23:25:38.253Z","bumped":true,"bumped_at":"2016-08-07T23:25:38.253Z","unseen":false,"pinned":false,"unpinned":null,"visible":true,"closed":false,"archived":false,"bookmarked":null,"liked":null,"views":940,"like_count":19,"has_summary":false,"archetype":"regular","last_poster_username":"codinghorror","category_id":6,"pinned_globally":false,"tags":[],"has_accepted_answer":false,"posters":[{"extras":null,"description":"Original Poster","user_id":13221},{"extras":null,"description":"Frequent Poster","user_id":11731},{"extras":null,"description":"Frequent Poster","user_id":6626},{"extras":null,"description":"Frequent Poster","user_id":21707},{"extras":"latest","description":"Most Recent Poster","user_id":32}]},{"id":18151,"title":"German translation","fancy_title":"German translation","slug":"german-translation","posts_count":29,"reply_count":20,"highest_post_number":33,"image_url":"https://cdn-enterprise.discourse.org/meta/images/emoji/twitter/wink.png?v=0","created_at":"2014-07-27T22:49:11.192Z","last_posted_at":"2016-08-07T23:13:35.134Z","bumped":true,"bumped_at":"2016-08-07T23:13:35.134Z","unseen":false,"pinned":false,"unpinned":null,"visible":true,"closed":false,"archived":false,"bookmarked":null,"liked":null,"views":2802,"like_count":35,"has_summary":false,"archetype":"regular","last_poster_username":"claas","category_id":27,"pinned_globally":false,"tags":[],"has_accepted_answer":false,"posters":[{"extras":null,"description":"Original Poster","user_id":4881},{"extras":null,"description":"Frequent Poster","user_id":7803},{"extras":null,"description":"Frequent Poster","user_id":9775},{"extras":null,"description":"Frequent Poster","user_id":16908},{"extras":"latest","description":"Most Recent Poster","user_id":21707}]},{"id":47142,"title":"Material Design Stock Theme","fancy_title":"Material Design Stock Theme","slug":"material-design-stock-theme","posts_count":87,"reply_count":47,"highest_post_number":92,"image_url":null,"created_at":"2016-07-12T03:14:28.033Z","last_posted_at":"2016-08-06T16:26:17.795Z","bumped":true,"bumped_at":"2016-08-07T21:03:21.466Z","unseen":false,"pinned":false,"unpinned":null,"visible":true,"closed":false,"archived":false,"bookmarked":null,"liked":null,"views":1866,"like_count":167,"has_summary":true,"archetype":"regular","last_poster_username":"sethm","category_id":9,"pinned_globally":false,"tags":[],"has_accepted_answer":false,"posters":[{"extras":null,"description":"Original Poster","user_id":14350},{"extras":null,"description":"Frequent Poster","user_id":12086},{"extras":null,"description":"Frequent Poster","user_id":21612},{"extras":null,"description":"Frequent Poster","user_id":5351},{"extras":"latest","description":"Most Recent Poster","user_id":17235}]},{"id":48312,"title":"Upgrade Discourse from Version\t0.9.8.3 to current on good karma basis","fancy_title":"Upgrade Discourse from Version\t0.9.8.3 to current on good karma basis","slug":"upgrade-discourse-from-version-0-9-8-3-to-current-on-good-karma-basis","posts_count":7,"reply_count":4,"highest_post_number":7,"image_url":null,"created_at":"2016-08-07T07:27:12.401Z","last_posted_at":"2016-08-07T20:11:47.287Z","bumped":true,"bumped_at":"2016-08-07T20:11:47.287Z","unseen":true,"pinned":false,"unpinned":null,"visible":true,"closed":false,"archived":false,"bookmarked":null,"liked":null,"views":132,"like_count":5,"has_summary":false,"archetype":"regular","last_poster_username":"Sebastian","category_id":14,"pinned_globally":false,"tags":[],"has_accepted_answer":false,"posters":[{"extras":"latest","description":"Original Poster, Most Recent Poster","user_id":8707},{"extras":null,"description":"Frequent Poster","user_id":5351},{"extras":null,"description":"Frequent Poster","user_id":6626},{"extras":null,"description":"Frequent Poster","user_id":11455}]},{"id":48326,"title":"How do I quote someone?","fancy_title":"How do I quote someone?","slug":"how-do-i-quote-someone","posts_count":5,"reply_count":1,"highest_post_number":5,"image_url":null,"created_at":"2016-08-07T16:41:01.711Z","last_posted_at":"2016-08-08T08:49:37.833Z","bumped":true,"bumped_at":"2016-08-07T19:18:18.578Z","unseen":true,"pinned":false,"unpinned":null,"visible":true,"closed":true,"archived":false,"bookmarked":null,"liked":null,"views":85,"like_count":4,"has_summary":false,"archetype":"regular","last_poster_username":"zogstrip","category_id":6,"pinned_globally":false,"tags":[],"has_accepted_answer":false,"posters":[{"extras":null,"description":"Original Poster","user_id":23149},{"extras":null,"description":"Frequent Poster","user_id":13220},{"extras":null,"description":"Frequent Poster","user_id":15209},{"extras":"latest","description":"Most Recent Poster","user_id":1995}]},{"id":28153,"title":"SIGN UP button disappears when SSO is enabled","fancy_title":"SIGN UP button disappears when SSO is enabled","slug":"sign-up-button-disappears-when-sso-is-enabled","posts_count":17,"reply_count":6,"highest_post_number":17,"image_url":"//discourse-meta.s3-us-west-1.amazonaws.com/optimized/3X/4/d/4d58bf9692b2009bb352bb06fb2fb3de3e92e728_1_690x122.png","created_at":"2015-04-30T17:19:28.011Z","last_posted_at":"2016-08-07T19:10:08.949Z","bumped":true,"bumped_at":"2016-08-07T19:10:08.949Z","unseen":false,"pinned":false,"unpinned":null,"visible":true,"closed":false,"archived":false,"bookmarked":null,"liked":null,"views":1170,"like_count":30,"has_summary":false,"archetype":"regular","last_poster_username":"jamesmarkcook","category_id":2,"pinned_globally":false,"tags":[],"has_accepted_answer":false,"posters":[{"extras":null,"description":"Original Poster","user_id":8571},{"extras":null,"description":"Frequent Poster","user_id":6626},{"extras":null,"description":"Frequent Poster","user_id":464},{"extras":null,"description":"Frequent Poster","user_id":5559},{"extras":"latest","description":"Most Recent Poster","user_id":11193}]},{"id":48290,"title":"DiscourseHub version check oddities","fancy_title":"DiscourseHub version check oddities","slug":"discoursehub-version-check-oddities","posts_count":4,"reply_count":1,"highest_post_number":4,"image_url":null,"created_at":"2016-08-06T10:29:04.617Z","last_posted_at":"2016-08-07T18:45:12.286Z","bumped":true,"bumped_at":"2016-08-07T18:45:12.286Z","unseen":false,"pinned":false,"unpinned":null,"visible":true,"closed":false,"archived":false,"bookmarked":null,"liked":null,"views":144,"like_count":4,"has_summary":false,"archetype":"regular","last_poster_username":"michaeld","category_id":1,"pinned_globally":false,"tags":[],"has_accepted_answer":false,"posters":[{"extras":"latest","description":"Original Poster, Most Recent Poster","user_id":6548},{"extras":null,"description":"Frequent Poster","user_id":32},{"extras":null,"description":"Frequent Poster","user_id":2}]},{"id":30972,"title":"«Paid Membership» plugin with PayPal integration! (version 3.0, 2015-08-31)","fancy_title":"«Paid Membership» plugin with PayPal integration! (version 3.0, 2015-08-31)","slug":"paid-membership-plugin-with-paypal-integration-version-3-0-2015-08-31","posts_count":12,"reply_count":2,"highest_post_number":12,"image_url":"//discourse-meta.s3-us-west-1.amazonaws.com/optimized/3X/c/6/c6f51ad84841cd2dbd391facd077606ce7808611_1_457x500.png","created_at":"2015-07-11T07:58:47.568Z","last_posted_at":"2016-08-07T18:43:45.752Z","bumped":true,"bumped_at":"2016-08-07T18:43:45.752Z","unseen":false,"pinned":false,"unpinned":null,"visible":true,"closed":false,"archived":false,"bookmarked":null,"liked":null,"views":2440,"like_count":4,"has_summary":false,"archetype":"regular","last_poster_username":"jamesmarkcook","category_id":14,"pinned_globally":false,"tags":["plugins"],"has_accepted_answer":false,"posters":[{"extras":null,"description":"Original Poster","user_id":15271},{"extras":null,"description":"Frequent Poster","user_id":6548},{"extras":null,"description":"Frequent Poster","user_id":15604},{"extras":null,"description":"Frequent Poster","user_id":15292},{"extras":"latest","description":"Most Recent Poster","user_id":11193}]},{"id":48327,"title":"Vultr and Mailgun instance not sending mails / plugins","fancy_title":"Vultr and Mailgun instance not sending mails / plugins","slug":"vultr-and-mailgun-instance-not-sending-mails-plugins","posts_count":3,"reply_count":0,"highest_post_number":3,"image_url":"//discourse-meta.s3-us-west-1.amazonaws.com/optimized/3X/f/f/ff78f73df433f4813c06af599e18db8158eec4b0_1_690x269.png","created_at":"2016-08-07T17:38:43.479Z","last_posted_at":"2016-08-07T18:38:24.263Z","bumped":true,"bumped_at":"2016-08-07T18:38:24.263Z","unseen":true,"pinned":false,"unpinned":null,"visible":true,"closed":false,"archived":false,"bookmarked":null,"liked":null,"views":51,"like_count":1,"has_summary":false,"archetype":"regular","last_poster_username":"djcyry","category_id":6,"pinned_globally":false,"tags":[],"has_accepted_answer":false,"posters":[{"extras":"latest","description":"Original Poster, Most Recent Poster","user_id":14361},{"extras":null,"description":"Frequent Poster","user_id":6626}]},{"id":48324,"title":"Meta bug: non-plural marked strings","fancy_title":"Meta bug: non-plural marked strings","slug":"meta-bug-non-plural-marked-strings","posts_count":1,"reply_count":0,"highest_post_number":1,"image_url":null,"created_at":"2016-08-07T16:29:42.955Z","last_posted_at":"2016-08-07T16:29:43.010Z","bumped":true,"bumped_at":"2016-08-07T16:42:59.932Z","unseen":true,"pinned":false,"unpinned":null,"visible":true,"closed":false,"archived":false,"bookmarked":null,"liked":null,"views":47,"like_count":2,"has_summary":false,"archetype":"regular","last_poster_username":"SafaAlfulaij","category_id":27,"pinned_globally":false,"tags":[],"has_accepted_answer":false,"posters":[{"extras":"latest single","description":"Original Poster, Most Recent Poster","user_id":18041}]},{"id":41465,"title":"Uploads and profile functions broken, gives ruby error","fancy_title":"Uploads and profile functions broken, gives ruby error","slug":"uploads-and-profile-functions-broken-gives-ruby-error","posts_count":7,"reply_count":2,"highest_post_number":8,"image_url":null,"created_at":"2016-03-23T08:24:20.655Z","last_posted_at":"2016-08-07T14:33:20.244Z","bumped":true,"bumped_at":"2016-08-07T14:33:20.244Z","unseen":false,"pinned":false,"unpinned":null,"visible":true,"closed":false,"archived":false,"bookmarked":null,"liked":null,"views":408,"like_count":1,"has_summary":false,"archetype":"regular","last_poster_username":"haikuos","category_id":6,"pinned_globally":false,"tags":[],"has_accepted_answer":false,"posters":[{"extras":null,"description":"Original Poster","user_id":18528},{"extras":null,"description":"Frequent Poster","user_id":8722},{"extras":"latest","description":"Most Recent Poster","user_id":23092}]},{"id":47494,"title":"Native theme support","fancy_title":"Native theme support","slug":"native-theme-support","posts_count":17,"reply_count":8,"highest_post_number":17,"image_url":null,"created_at":"2016-07-19T06:38:35.200Z","last_posted_at":"2016-08-07T10:12:00.923Z","bumped":true,"bumped_at":"2016-08-07T12:56:38.821Z","unseen":false,"pinned":false,"unpinned":null,"visible":true,"closed":false,"archived":false,"bookmarked":null,"liked":null,"views":630,"like_count":56,"has_summary":false,"archetype":"regular","last_poster_username":"Oskar","category_id":32,"pinned_globally":false,"tags":[],"has_accepted_answer":false,"posters":[{"extras":null,"description":"Original Poster","user_id":1},{"extras":null,"description":"Frequent Poster","user_id":3998},{"extras":null,"description":"Frequent Poster","user_id":18201},{"extras":null,"description":"Frequent Poster","user_id":15568},{"extras":"latest","description":"Most Recent Poster","user_id":1910}]},{"id":48319,"title":"Relation \"scheduler_stats\" does not exist","fancy_title":"Relation &ldquo;scheduler_stats&rdquo; does not exist","slug":"relation-scheduler-stats-does-not-exist","posts_count":4,"reply_count":0,"highest_post_number":4,"image_url":null,"created_at":"2016-08-07T10:43:27.986Z","last_posted_at":"2016-08-07T13:16:34.685Z","bumped":true,"bumped_at":"2016-08-07T12:45:37.305Z","unseen":true,"pinned":false,"unpinned":null,"visible":true,"closed":true,"archived":false,"bookmarked":null,"liked":null,"views":58,"like_count":1,"has_summary":false,"archetype":"regular","last_poster_username":"zogstrip","category_id":6,"pinned_globally":false,"tags":[],"has_accepted_answer":true,"posters":[{"extras":null,"description":"Original Poster","user_id":7366},{"extras":"latest","description":"Most Recent Poster","user_id":1995}]},{"id":48299,"title":"Tag explanation - feature request","fancy_title":"Tag explanation - feature request","slug":"tag-explanation-feature-request","posts_count":4,"reply_count":0,"highest_post_number":4,"image_url":null,"created_at":"2016-08-06T17:02:13.440Z","last_posted_at":"2016-08-07T11:47:17.088Z","bumped":true,"bumped_at":"2016-08-07T11:47:17.088Z","unseen":true,"pinned":false,"unpinned":null,"visible":true,"closed":false,"archived":false,"bookmarked":null,"liked":null,"views":117,"like_count":5,"has_summary":false,"archetype":"regular","last_poster_username":"Pad_Pors","category_id":2,"pinned_globally":false,"tags":[],"has_accepted_answer":false,"posters":[{"extras":"latest","description":"Original Poster, Most Recent Poster","user_id":17969},{"extras":null,"description":"Frequent Poster","user_id":17621},{"extras":null,"description":"Frequent Poster","user_id":5351}]},{"id":42271,"title":"A feature for the «Tagging» plugin: an ability to set a description for a tag page similar to the categories pages","fancy_title":"A feature for the «Tagging» plugin: an ability to set a description for a tag page similar to the categories pages","slug":"a-feature-for-the-tagging-plugin-an-ability-to-set-a-description-for-a-tag-page-similar-to-the-categories-pages","posts_count":4,"reply_count":0,"highest_post_number":4,"image_url":"//discourse-meta.s3-us-west-1.amazonaws.com/optimized/3X/6/5/65811616690568f28181e2ecb81dd6577c6424fc_1_690x330.png","created_at":"2016-04-09T00:25:57.146Z","last_posted_at":"2016-04-15T19:19:16.128Z","bumped":true,"bumped_at":"2016-08-07T10:27:47.874Z","unseen":false,"pinned":false,"unpinned":null,"visible":true,"closed":true,"archived":false,"bookmarked":null,"liked":null,"views":249,"like_count":11,"has_summary":false,"archetype":"regular","last_poster_username":"codinghorror","category_id":2,"pinned_globally":false,"tags":[],"has_accepted_answer":false,"posters":[{"extras":null,"description":"Original Poster","user_id":15271},{"extras":null,"description":"Frequent Poster","user_id":2},{"extras":"latest","description":"Most Recent Poster","user_id":32}]},{"id":48303,"title":"Avoid notification warning","fancy_title":"Avoid notification warning","slug":"avoid-notification-warning","posts_count":4,"reply_count":1,"highest_post_number":4,"image_url":null,"created_at":"2016-08-07T01:11:37.489Z","last_posted_at":"2016-08-07T05:42:06.471Z","bumped":true,"bumped_at":"2016-08-07T05:42:06.471Z","unseen":true,"pinned":false,"unpinned":null,"visible":true,"closed":false,"archived":false,"bookmarked":null,"liked":null,"views":94,"like_count":9,"has_summary":false,"archetype":"regular","last_poster_username":"mrjn","category_id":2,"pinned_globally":false,"tags":[],"has_accepted_answer":false,"posters":[{"extras":"latest","description":"Original Poster, Most Recent Poster","user_id":21024},{"extras":null,"description":"Frequent Poster","user_id":17621},{"extras":null,"description":"Frequent Poster","user_id":32}]}]}});
+      })();
+      </script>
+
+    
+
+    <script>
+  Ember.RSVP.configure('onerror', function(e) {
+    // Ignore TransitionAborted exceptions that bubble up
+    if (e && e.message === "TransitionAborted") { return; }
+
+    window.onerror(e && e.message, null,null,null,e);
+  });
+
+
+</script>
+
+<script>
+
+  (function() {
+    var ps = require('preload-store').default;
+
+    Discourse.CDN = 'https://cdn-enterprise.discourse.org/meta';
+    Discourse.BaseUrl = 'meta.discourse.org'.replace(/:[\d]*$/,"");
+    Discourse.BaseUri = '';
+    Discourse.Environment = 'production';
+    Discourse.SiteSettings = ps.get('siteSettings');
+    Discourse.LetterAvatarVersion = '5_c0cde1efe2d04fc597c97e478949252e';
+    I18n.defaultLocale = 'en';
+    Discourse.start();
+    Discourse.set('assetVersion','e5b6027b74f417b0435ad0fc95d5f1c7');
+    Discourse.Session.currentProp("disableCustomCSS", false);
+    Discourse.HighlightJSPath = "/highlight-js/meta.discourse.org/125549f92027887146b8b9afc8d91d0cdc374b78.js";
+        Discourse.S3CDN = 'https://meta-s3-cdn.global.ssl.fastly.net';
+      Discourse.S3BaseUrl = '//discourse-meta.s3-us-west-1.amazonaws.com';
+  })();
+</script>
+
+<script src="./Discourse Meta_files/browser-update-f57286e74ddbc53aa899689b01ef467078911e4138050c561939955849af35dd.js"></script>
+
+
+    <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-33736483-2']);
+
+
+  _gaq.push(['_setCustomVar', 1, 'Anonymous', false, 2]);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+       <script>
+ Discourse.ExternalNavItem = Discourse.NavItem.extend({
+    href : function() {
+      return this.get('href');
+    }.property('href')
+  });
+
+  I18n.translations[I18n.locale].js.filters.bugs = { title: "Bugs", help: "Open Bugs" };
+  I18n.translations[I18n.locale].js.filters.features = { title: "Features", help: "Open Feature Requests" };
+     
+  Discourse.NavItem.reopenClass({
+    buildList : function(category, args) {
+      var list = this._super(category, args);
+      if(!category) {
+        list.push(Discourse.ExternalNavItem.create({href: '/c/bug/l/top/quarterly?status=open', name: 'bugs'}));
+        list.push(Discourse.ExternalNavItem.create({href: '/category/feature?order=op_likes&status=open', name: 'features'}));
+      }
+      return list;
+    }
+  });
+  </script>
+
+  
+
+<div id="shadowMeasureIt"></div><div id="divCoordMeasureIt"></div><div id="divRectangleMeasureIt"><div id="divRectangleBGMeasureIt"></div></div></body><div></div></html>
